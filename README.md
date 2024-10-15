@@ -5,7 +5,9 @@ Build intricate marble tracks in augmented reality, where your imagination knows
 
 ### The Team:
 -Soroush Jahanzad
--Edoardo Negri
--Cyril Pomsar
--Aaron Zürcher
 
+-Edoardo Negri
+
+-Cyril Pomsar
+
+-Aaron Zürcher
