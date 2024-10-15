@@ -4,10 +4,10 @@
 Build intricate marble tracks in augmented reality, where your imagination knows no bounds. Watch as your marbles race through your designs, and battle for the first place.
 
 ### The Team:
--Soroush Jahanzad
+- Soroush Jahanzad
 
--Edoardo Negri
+- Edoardo Negri
 
--Cyril Pomsar
+- Cyril Pomsar
 
--Aaron Zürcher
+- Aaron Zürcher
