@@ -13,6 +13,7 @@ public class VRPathDrawer : MonoBehaviour
     
     private Spline spline;
     private Vector3 lastPoint;
+    private Vector3 lastDirection;
     private bool isDrawing = false;
     //private List<GameObject> segments = new List<GameObject>();
     private GameObject segment;
@@ -48,6 +49,7 @@ public class VRPathDrawer : MonoBehaviour
         isDrawing = true;
         currStartPoint = transform.position;
         lastPoint = currStartPoint;
+        lastDirection = Vector3(0,0,0);
         //create connector
     }
 
@@ -57,8 +59,12 @@ public class VRPathDrawer : MonoBehaviour
         Vector3 currentPoint = transform.position;
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
-            spline.Add(new BezierKnot(currentPoint));
-            lastPoint = currentPoint;
+            Vector3 currdir = currentPoint - lastPoint;
+            if (lastDirection == Vector(0,0,0) || Vector3.Angle(lastDirection, currdir) <= 45.0f) {
+                spline.Add(new BezierKnot(currentPoint));
+                lastPoint = currentPoint;
+                lastDirection = currdir;
+            }
         }
     }
 
