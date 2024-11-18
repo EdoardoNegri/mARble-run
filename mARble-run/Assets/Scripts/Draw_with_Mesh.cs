@@ -26,20 +26,20 @@ public class VRPathDrawer : MonoBehaviour
     private Mesh mesh;
 
     //start and end point stores for connecting pieces
-    List<int> spline_startpoint_indices = new List<int>();
-    List<int> spline_endpoint_indices = new List<int>();
-    List<Vector3> spline_startpoint_points = new List<Vector3>;
-    List<Vector3> spline_endpoint_points = new List<Vector3>;
+    private List<int> spline_startpoint_indices = new List<int>();
+    private List<int> spline_endpoint_indices = new List<int>();
+    private List<Vector3> spline_startpoint_points = new List<Vector3>();
+    private List<Vector3> spline_endpoint_points = new List<Vector3>();
 
     //holds the mesh elements
-    List<Vector3> vertices = new List<Vector3>();
-    List<Vector2> uvs = new List<Vector2>();
-    List<int> tris = new List<int>();
+    private List<Vector3> vertices = new List<Vector3>();
+    private List<Vector2> uvs = new List<Vector2>();
+    private List<int> tris = new List<int>();
 
     //number of vertices around each single point (dont change atm)
-    int num_vertices_per_point = 4;
+    private int num_vertices_per_point = 4;
     //distance of vertices generated from the spline
-    float width = 1.0;
+    private float width = 1.0f;
 
     void Start()
     {
@@ -106,7 +106,8 @@ public class VRPathDrawer : MonoBehaviour
     }
 
 
-    void ConnectEndpoints(){
+    void ConnectEndpoints()
+    {
         //segment = new GameObject("Segment");
         //segment.tag = "Route";
         //Instantiate(new GameObject("Connector01"), currStartPoint, Quaternion.identity, segment.transform);
@@ -115,9 +116,9 @@ public class VRPathDrawer : MonoBehaviour
 
         //We take the endpoints of the newly generated spline
         Vector3 new_startpoint = spline_startpoint_points[spline_startpoint_points.Count-1];
-        int new_startpoint_index = spline_startpoint_indices.Last[spline_startpoint_indices.Count - 1];
+        int new_startpoint_index = spline_startpoint_indices[spline_startpoint_indices.Count - 1];
         Vector3 new_endpoint = spline_endpoint_points[spline_endpoint_points.Count - 1];
-        int new_endpoint_index = spline_endpoint_indices.Last[spline_endpoint_indices.Count - 1];
+        int new_endpoint_index = spline_endpoint_indices[spline_endpoint_indices.Count - 1];
 
         int start_connection_index = -1;
         int end_connection_index = -1;
@@ -162,71 +163,16 @@ public class VRPathDrawer : MonoBehaviour
             FillFaces_single_step(new_startpoint_index, end_connection_index);
         }
 
-
-        /*
-        //
-        
-        
-        
-        i need to have also a direction for the first point we want to connect, i can save two last points
-        bool doubleConnect = false;
-        foreach (var segment in segments)
-        {
-            GameObject startPoint = segment.transform.Find(startPoint);
-            GameObject endPoint = segment.transform.Find(endPoint);
-
-            if (Vector3.Distance(currStartPoint, startPoint.transform) <= maxDistToConnect)
-            {
-                spline.Add(new BezierKnot(startPoint.transform));
-                startPoint.transform = currEndPoint;
-                currSegment = segment;
-                doubleConnect = true;
-                break;
-            }
-            if (Vector3.Distance(currStartPoint, endPoint.transform) <= maxDistToConnect)
-            {
-                spline.Add(new BezierKnot(endPoint.transform));
-                endPoint.transform = currEndPoint;
-                currSegment = segment;
-                doubleConnect = true;
-                break;
-            }
-        }
-        foreach (var pair in endPoints)
-        {
-            //if double connect then skip the currSegment
-            if (Vector3.Distance(currEndPoint, startPoint.transform) <= maxDistToConnect)
-            {
-                spline.Add(new BezierKnot(startPoint.transform));
-                startPoint.transform = currStartPoint;
-                if(doubleConnect){
-                    //transfer all the object instantiate in the other segment into this new one
-                }
-                currSegment = segment;
-                break;
-            }
-            if (Vector3.Distance(currEndPoint, endPoint.transform) <= maxDistToConnect)
-            {
-                spline.Add(new BezierKnot(endPoint.transform));
-                endPoint.transform = currStartPoint;
-                currSegment = segment;
-                if(doubleConnect){
-                    //
-                }
-                currSegment = segment;
-                break;
-            }
-        }
-        */
-        //if not connection is found then a new segment is created with an empty game objects named startPoint, endPoint.
+           
     }
 
 
     
 
-    void ConstructRoute(){
+    void ConstructRoute()
+    {
         float percentage = minDistance / spline.GetLength();
-        int startpoint_index = vertices.size();
+        int startpoint_index = vertices.Count;
         int new_point_counter = 0;
         for (float t = 0f; t <= 1; t += percentage)
         {
@@ -240,10 +186,10 @@ public class VRPathDrawer : MonoBehaviour
               
                 Vector3 right = Vector3.Cross(tangent, upVector).normalized;
 
-                vertices.Add(position + (right * width);
-                vertices.Add(position + (-right * width);
-                vertices.Add(position + (-upVector * width);
-                vertices.Add(position + (-upVector * width * 1.5);
+                vertices.Add(((Vector3)position) + (right * width));
+                vertices.Add(((Vector3)position) + (-right * width));
+                vertices.Add(((Vector3)position) + (-((Vector3)upVector) * width));
+                vertices.Add(((Vector3)position) + (-((Vector3)upVector) * width * 1.5f));
 
             }
         }
