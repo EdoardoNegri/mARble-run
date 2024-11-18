@@ -8,11 +8,13 @@ public class VRPathDrawer : MonoBehaviour
 {
     public XRNode controllerNode = XRNode.RightHand; // Choose which controller to use
     public float minDistance = 0.01f; // Minimum distance between points and construction points
+    public float maxAngle = 45.0f; // Maximum angle between points and construction points
     public float maxDistToConnect = 0.02f;
     public GameObject rampPrefab; // Prefab for the line renderer
     
     private Spline spline;
     private Vector3 lastPoint;
+    private Vector3 lastDirection;
     private bool isDrawing = false;
     //private List<GameObject> segments = new List<GameObject>();
     private GameObject segment;
@@ -48,6 +50,7 @@ public class VRPathDrawer : MonoBehaviour
         isDrawing = true;
         currStartPoint = transform.position;
         lastPoint = currStartPoint;
+        lastDirection = Vector3(0,0,0);
         //create connector
     }
 
@@ -57,8 +60,12 @@ public class VRPathDrawer : MonoBehaviour
         Vector3 currentPoint = transform.position;
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
-            spline.Add(new BezierKnot(currentPoint));
-            lastPoint = currentPoint;
+            Vector3 currdir = currentPoint - lastPoint;
+            if (lastDirection == Vector(0,0,0) || Vector3.Angle(lastDirection, currdir) <= maxAngle) {
+                spline.Add(new BezierKnot(currentPoint));
+                lastPoint = currentPoint;
+                lastDirection = currdir;
+            }
         }
     }
 
