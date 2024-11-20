@@ -50,7 +50,7 @@ public class VRPathDrawer : MonoBehaviour
         isDrawing = true;
         currStartPoint = transform.position;
         lastPoint = currStartPoint;
-        lastDirection = Vector3(0,0,0);
+        lastDirection = new Vector3(0,0,0);
         //create connector
     }
 
@@ -61,7 +61,7 @@ public class VRPathDrawer : MonoBehaviour
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
             Vector3 currdir = currentPoint - lastPoint;
-            if (lastDirection == Vector(0,0,0) || Vector3.Angle(lastDirection, currdir) <= maxAngle) {
+            if (lastDirection == Vector3.zero || Vector3.Angle(lastDirection, currdir) <= maxAngle) {
                 spline.Add(new BezierKnot(currentPoint));
                 lastPoint = currentPoint;
                 lastDirection = currdir;

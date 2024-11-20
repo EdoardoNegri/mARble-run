@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/release' branch; Version is '2022.3.48f1 (8bf49c377ebf) revision 9172124'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'it' Physical Memory: 16310 MB
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 28513 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.48f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/edonn/Documents/mARble-run/mARble-run
+C:/Users/edonn/Code/Unity/mARble-run/mARble-run
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49965
-Successfully changed project path to: C:/Users/edonn/Documents/mARble-run/mARble-run
-C:/Users/edonn/Documents/mARble-run/mARble-run
+65104
+Successfully changed project path to: C:/Users/edonn/Code/Unity/mARble-run/mARble-run
+C:/Users/edonn/Code/Unity/mARble-run/mARble-run
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,72 +49,457 @@ C:/Users/edonn/Documents/mARble-run/mARble-run
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30648]  Target information:
+Player connection [7516]  Target information:
 
-Player connection [30648]  * "[IP] 192.168.10.137 [Port] 0 [Flags] 2 [Guid] 2050931872 [EditorId] 2050931872 [Version] 1048832 [Id] WindowsEditor(7,Edo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [7516]  * "[IP] 10.5.37.148 [Port] 0 [Flags] 2 [Guid] 1394507533 [EditorId] 1394507533 [Version] 1048832 [Id] WindowsEditor(7,EdoNe) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [30648] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [30648] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 921.53 ms, found 22 plugins.
+Player connection [7516] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7516] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 35.23 ms, found 21 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.48f1 (8bf49c377ebf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/edonn/Documents/mARble-run/mARble-run/Assets
+[Subsystems] Discovering subsystems at path C:/Users/edonn/Code/Unity/mARble-run/mARble-run/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon RX 5700 XT (ID=0x731f)
-    Vendor:   ATI
-    VRAM:     8124 MB
-    Driver:   32.0.12011.1036
+[vulkan] LoadVulkanLibrary vulkan-1.dll[vulkan] Loaded instance function vkGetInstanceProcAddr
+[vulkan] Loaded instance function vkGetInstanceProcAddr
+[vulkan] Loaded instance function vkCreateInstance
+[vulkan] Loaded instance function vkEnumerateInstanceExtensionProperties
+[vulkan] Loaded instance function vkEnumerateInstanceLayerProperties
+[vulkan] Loaded instance function vkEnumerateInstanceVersion
+[Vulkan init] extensions: count=13
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_win32_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+[vulkan] Loaded instance function vkDestroyInstance
+[vulkan] Loaded instance function vkGetPhysicalDeviceProperties
+[vulkan] Loaded instance function vkEnumeratePhysicalDevices
+Vulkan detection: 2
+[Vulkan init] extensions: count=13
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_win32_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+[vulkan] Loaded instance function vkDestroyInstance
+[vulkan] Loaded instance function vkGetPhysicalDeviceProperties
+[vulkan] Loaded instance function vkEnumeratePhysicalDevices
+[vulkan] Loaded instance function vkGetDeviceProcAddr
+[vulkan] Loaded instance function vkGetPhysicalDeviceFeatures
+[vulkan] Loaded instance function vkGetPhysicalDeviceFormatProperties
+[vulkan] Loaded instance function vkGetPhysicalDeviceImageFormatProperties
+[vulkan] Loaded instance function vkGetPhysicalDeviceQueueFamilyProperties
+[vulkan] Loaded instance function vkGetPhysicalDeviceMemoryProperties
+[vulkan] Loaded instance function vkCreateDevice
+[vulkan] Loaded instance function vkEnumerateDeviceExtensionProperties
+[vulkan] Loaded instance function vkEnumerateDeviceLayerProperties
+[vulkan] Loaded instance function vkGetPhysicalDeviceSparseImageFormatProperties
+[vulkan] Loaded instance function vkDestroySurfaceKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceSupportKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceCapabilitiesKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceFormatsKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceSurfacePresentModesKHR
+[vulkan] Loaded instance function vkCreateSwapchainKHR
+[vulkan] Loaded instance function vkDestroySwapchainKHR
+[vulkan] Loaded instance function vkGetSwapchainImagesKHR
+[vulkan] Loaded instance function vkAcquireNextImageKHR
+[vulkan] Loaded instance function vkQueuePresentKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceDisplayPropertiesKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceDisplayPlanePropertiesKHR
+[vulkan] Loaded instance function vkGetDisplayPlaneSupportedDisplaysKHR
+[vulkan] Loaded instance function vkGetDisplayModePropertiesKHR
+[vulkan] Loaded instance function vkCreateDisplayModeKHR
+[vulkan] Loaded instance function vkGetDisplayPlaneCapabilitiesKHR
+[vulkan] Loaded instance function vkCreateDisplayPlaneSurfaceKHR
+[vulkan] Loaded instance function vkCreateSharedSwapchainsKHR
+[vulkan] Loaded instance function vkCreateWin32SurfaceKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceWin32PresentationSupportKHR
+[vulkan] Loaded instance function vkSetHdrMetadataEXT
+[vulkan] Loaded instance function vkGetPhysicalDeviceFeatures2KHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceProperties2KHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceFormatProperties2KHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceImageFormatProperties2KHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceQueueFamilyProperties2KHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceMemoryProperties2KHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceSparseImageFormatProperties2KHR
+[vulkan] Loaded instance function vkGetSemaphoreFdKHR
+[vulkan] Loaded instance function vkImportSemaphoreFdKHR
+[vulkan] Loaded instance function vkGetFenceFdKHR
+[vulkan] Loaded instance function vkImportFenceFdKHR
+[vulkan] Loaded instance function vkCreateSamplerYcbcrConversionKHR
+[vulkan] Loaded instance function vkDestroySamplerYcbcrConversionKHR
+[vulkan] Loaded instance function vkBindBufferMemory2KHR
+[vulkan] Loaded instance function vkBindImageMemory2KHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceExternalSemaphorePropertiesKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceExternalFencePropertiesKHR
+[vulkan] Loaded instance function vkGetPhysicalDeviceFragmentShadingRatesKHR
+[vulkan] Loaded instance function vkSetDebugUtilsObjectNameEXT
+[vulkan] Loaded instance function vkSetDebugUtilsObjectTagEXT
+[vulkan] Loaded instance function vkQueueBeginDebugUtilsLabelEXT
+[vulkan] Loaded instance function vkQueueEndDebugUtilsLabelEXT
+[vulkan] Loaded instance function vkQueueInsertDebugUtilsLabelEXT
+[vulkan] Loaded instance function vkCmdBeginDebugUtilsLabelEXT
+[vulkan] Loaded instance function vkCmdEndDebugUtilsLabelEXT
+[vulkan] Loaded instance function vkCmdInsertDebugUtilsLabelEXT
+[Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=0000000000000000
+[Vulkan init] Physical Device 000001D0BCCD3F90 [0]: "AMD Radeon (TM) Graphics" deviceType=1 vendorID=1002 deviceID=15e7
+[Vulkan init] Selected physical device 000001D0BCCD3F90
+[Vulkan init] Graphics queue count=1
+[Vulkan init] extensions: count=148
+[Vulkan init] extensions: name=VK_AMD_buffer_marker [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_calibrated_timestamps [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_device_coherent_memory [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_display_native_hdr [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_draw_indirect_count [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_gcn_shader [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_gpa_interface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_gpu_shader_half_float [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_gpu_shader_int16 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_memory_overallocation_behavior [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_mixed_attachment_samples [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_rasterization_order [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_ballot [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_core_properties [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_core_properties2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_early_and_late_fragment_tests [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_explicit_vertex_parameter [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_fragment_mask [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_image_load_store_lod [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_info [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_shader_trinary_minmax [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_AMD_texture_gather_bias_lod [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_4444_formats [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_calibrated_timestamps [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_color_write_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_conditional_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_conservative_rasterization [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_custom_border_color [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clamp_zero_one [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_range_unrestricted [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_buffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_indexing [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_device_address_binding_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_device_fault [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_dynamic_rendering_unused_attachments [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_host [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_full_screen_exclusive [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_global_priority [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_global_priority_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_hdr_metadata [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_host_query_reset [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_robustness [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_view_min_lod [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_index_type_uint8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_inline_uniform_block [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_line_rasterization [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_load_store_op_none [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_memory_budget [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_memory_priority [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_mutable_descriptor_type [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_non_seamless_cube_map [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pageable_device_local_memory [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_cache_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitive_topology_list_restart [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_private_data [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_provoking_vertex [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_queue_family_foreign [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_robustness2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_sample_locations [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_sampler_filter_minmax [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_scalar_block_layout [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_separate_stencil_usage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_atomic_float [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_demote_to_helper_invocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_image_atomic_int64 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_module_identifier [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_stencil_export [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_ballot [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_vote [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_viewport_index_layer [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_subgroup_size_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_texel_buffer_alignment [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_tooling_info [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_transform_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_attribute_divisor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_input_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_ycbcr_image_arrays [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_decorate_string [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_hlsl_functionality1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_user_type [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_16bit_storage [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_8bit_storage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_bind_memory2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_buffer_device_address [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_copy_commands2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_create_renderpass2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dedicated_allocation [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_depth_stencil_resolve [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_descriptor_update_template [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_draw_indirect_count [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_driver_properties [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dynamic_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_win32 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_win32 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_win32 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_format_feature_flags2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_fragment_shader_barycentric [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_memory_requirements2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_global_priority [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_image_format_list [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_imageless_framebuffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance1 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_map_memory2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_multiview [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_executable_properties [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_library [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_push_descriptor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_relaxed_block_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_ycbcr_conversion [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_separate_depth_stencil_layouts [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_atomic_int64 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_clock [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_draw_parameters [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float16_int8 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float_controls [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_integer_dot_product [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_non_semantic_info [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_extended_types [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_uniform_control_flow [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_terminate_invocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_spirv_1_4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_storage_buffer_storage_class [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain_mutable_format [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_synchronization2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_timeline_semaphore [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_uniform_buffer_standard_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_variable_pointers [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_vulkan_memory_model [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_win32_keyed_mutex [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_workgroup_memory_explicit_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_zero_initialize_workgroup_memory [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_VALVE_mutable_descriptor_type [enabled=0, external=0]
+[vulkan] Loaded instance function vkDestroyDevice
+[vulkan] Loaded instance function vkGetDeviceQueue
+[vulkan] Loaded instance function vkQueueSubmit
+[vulkan] Loaded instance function vkQueueWaitIdle
+[vulkan] Loaded instance function vkDeviceWaitIdle
+[vulkan] Loaded instance function vkAllocateMemory
+[vulkan] Loaded instance function vkFreeMemory
+[vulkan] Loaded instance function vkMapMemory
+[vulkan] Loaded instance function vkUnmapMemory
+[vulkan] Loaded instance function vkFlushMappedMemoryRanges
+[vulkan] Loaded instance function vkInvalidateMappedMemoryRanges
+[vulkan] Loaded instance function vkGetDeviceMemoryCommitment
+[vulkan] Loaded instance function vkBindBufferMemory
+[vulkan] Loaded instance function vkBindImageMemory
+[vulkan] Loaded instance function vkGetBufferMemoryRequirements
+[vulkan] Loaded instance function vkGetImageMemoryRequirements
+[vulkan] Loaded instance function vkGetImageSparseMemoryRequirements
+[vulkan] Loaded instance function vkQueueBindSparse
+[vulkan] Loaded instance function vkCreateFence
+[vulkan] Loaded instance function vkDestroyFence
+[vulkan] Loaded instance function vkResetFences
+[vulkan] Loaded instance function vkGetFenceStatus
+[vulkan] Loaded instance function vkWaitForFences
+[vulkan] Loaded instance function vkCreateSemaphore
+[vulkan] Loaded instance function vkDestroySemaphore
+[vulkan] Loaded instance function vkCreateEvent
+[vulkan] Loaded instance function vkDestroyEvent
+[vulkan] Loaded instance function vkGetEventStatus
+[vulkan] Loaded instance function vkSetEvent
+[vulkan] Loaded instance function vkResetEvent
+[vulkan] Loaded instance function vkCreateQueryPool
+[vulkan] Loaded instance function vkDestroyQueryPool
+[vulkan] Loaded instance function vkGetQueryPoolResults
+[vulkan] Loaded instance function vkCreateBuffer
+[vulkan] Loaded instance function vkDestroyBuffer
+[vulkan] Loaded instance function vkCreateBufferView
+[vulkan] Loaded instance function vkDestroyBufferView
+[vulkan] Loaded instance function vkCreateImage
+[vulkan] Loaded instance function vkDestroyImage
+[vulkan] Loaded instance function vkGetImageSubresourceLayout
+[vulkan] Loaded instance function vkCreateImageView
+[vulkan] Loaded instance function vkDestroyImageView
+[vulkan] Loaded instance function vkCreateShaderModule
+[vulkan] Loaded instance function vkDestroyShaderModule
+[vulkan] Loaded instance function vkCreatePipelineCache
+[vulkan] Loaded instance function vkDestroyPipelineCache
+[vulkan] Loaded instance function vkGetPipelineCacheData
+[vulkan] Loaded instance function vkMergePipelineCaches
+[vulkan] Loaded instance function vkCreateGraphicsPipelines
+[vulkan] Loaded instance function vkCreateComputePipelines
+[vulkan] Loaded instance function vkDestroyPipeline
+[vulkan] Loaded instance function vkCreatePipelineLayout
+[vulkan] Loaded instance function vkDestroyPipelineLayout
+[vulkan] Loaded instance function vkCreateSampler
+[vulkan] Loaded instance function vkDestroySampler
+[vulkan] Loaded instance function vkCreateDescriptorSetLayout
+[vulkan] Loaded instance function vkDestroyDescriptorSetLayout
+[vulkan] Loaded instance function vkCreateDescriptorPool
+[vulkan] Loaded instance function vkDestroyDescriptorPool
+[vulkan] Loaded instance function vkResetDescriptorPool
+[vulkan] Loaded instance function vkAllocateDescriptorSets
+[vulkan] Loaded instance function vkFreeDescriptorSets
+[vulkan] Loaded instance function vkUpdateDescriptorSets
+[vulkan] Loaded instance function vkCreateFramebuffer
+[vulkan] Loaded instance function vkDestroyFramebuffer
+[vulkan] Loaded instance function vkCreateRenderPass
+[vulkan] Loaded instance function vkDestroyRenderPass
+[vulkan] Loaded instance function vkGetRenderAreaGranularity
+[vulkan] Loaded instance function vkCreateCommandPool
+[vulkan] Loaded instance function vkDestroyCommandPool
+[vulkan] Loaded instance function vkResetCommandPool
+[vulkan] Loaded instance function vkAllocateCommandBuffers
+[vulkan] Loaded instance function vkFreeCommandBuffers
+[vulkan] Loaded instance function vkBeginCommandBuffer
+[vulkan] Loaded instance function vkEndCommandBuffer
+[vulkan] Loaded instance function vkResetCommandBuffer
+[vulkan] Loaded instance function vkCmdBindPipeline
+[vulkan] Loaded instance function vkCmdSetViewport
+[vulkan] Loaded instance function vkCmdSetScissor
+[vulkan] Loaded instance function vkCmdSetLineWidth
+[vulkan] Loaded instance function vkCmdSetDepthBias
+[vulkan] Loaded instance function vkCmdSetBlendConstants
+[vulkan] Loaded instance function vkCmdSetDepthBounds
+[vulkan] Loaded instance function vkCmdSetStencilCompareMask
+[vulkan] Loaded instance function vkCmdSetStencilWriteMask
+[vulkan] Loaded instance function vkCmdSetStencilReference
+[vulkan] Loaded instance function vkCmdBindDescriptorSets
+[vulkan] Loaded instance function vkCmdBindIndexBuffer
+[vulkan] Loaded instance function vkCmdBindVertexBuffers
+[vulkan] Loaded instance function vkCmdDraw
+[vulkan] Loaded instance function vkCmdDrawIndexed
+[vulkan] Loaded instance function vkCmdDrawIndirect
+[vulkan] Loaded instance function vkCmdDrawIndexedIndirect
+[vulkan] Loaded instance function vkCmdDispatch
+[vulkan] Loaded instance function vkCmdDispatchIndirect
+[vulkan] Loaded instance function vkCmdCopyBuffer
+[vulkan] Loaded instance function vkCmdCopyImage
+[vulkan] Loaded instance function vkCmdBlitImage
+[vulkan] Loaded instance function vkCmdCopyBufferToImage
+[vulkan] Loaded instance function vkCmdCopyImageToBuffer
+[vulkan] Loaded instance function vkCmdUpdateBuffer
+[vulkan] Loaded instance function vkCmdFillBuffer
+[vulkan] Loaded instance function vkCmdClearColorImage
+[vulkan] Loaded instance function vkCmdClearDepthStencilImage
+[vulkan] Loaded instance function vkCmdClearAttachments
+[vulkan] Loaded instance function vkCmdResolveImage
+[vulkan] Loaded instance function vkCmdSetEvent
+[vulkan] Loaded instance function vkCmdResetEvent
+[vulkan] Loaded instance function vkCmdWaitEvents
+[vulkan] Loaded instance function vkCmdPipelineBarrier
+[vulkan] Loaded instance function vkCmdBeginQuery
+[vulkan] Loaded instance function vkCmdEndQuery
+[vulkan] Loaded instance function vkCmdResetQueryPool
+[vulkan] Loaded instance function vkCmdWriteTimestamp
+[vulkan] Loaded instance function vkCmdCopyQueryPoolResults
+[vulkan] Loaded instance function vkCmdPushConstants
+[vulkan] Loaded instance function vkCmdBeginRenderPass
+[vulkan] Loaded instance function vkCmdNextSubpass
+[vulkan] Loaded instance function vkCmdEndRenderPass
+[vulkan] Loaded instance function vkCmdExecuteCommands
+[vulkan] Loaded instance function vkGetImageMemoryRequirements2KHR
+[vulkan] Loaded instance function vkGetBufferMemoryRequirements2KHR
+[vulkan] Loaded instance function vkGetImageSparseMemoryRequirements2KHR
+[vulkan] Loaded instance function vkCreateDescriptorUpdateTemplateKHR
+[vulkan] Loaded instance function vkDestroyDescriptorUpdateTemplateKHR
+[vulkan] Loaded instance function vkUpdateDescriptorSetWithTemplateKHR
+[vulkan] Loaded instance function vkCmdBeginRenderPass2KHR
+[vulkan] Loaded instance function vkCmdEndRenderPass2KHR
+[vulkan] Loaded instance function vkCmdNextSubpass2KHR
+[vulkan] Loaded instance function vkCreateRenderPass2KHR
+[vulkan] Loaded instance function vkCmdSetFragmentShadingRateKHR
+[vulkan] Loaded instance function vkDebugMarkerSetObjectTagEXT
+[vulkan] Loaded instance function vkDebugMarkerSetObjectNameEXT
+[vulkan] Loaded instance function vkCmdDebugMarkerBeginEXT
+[vulkan] Loaded instance function vkCmdDebugMarkerEndEXT
+[vulkan] Loaded instance function vkCmdDebugMarkerInsertEXT
+Vulkan API version 1.1.0 (1.3.260 supported by driver, 1.1.0 requested)
+Vulkan vendor=[ATI] id=[1002]
+Vulkan renderer=[AMD Radeon (TM) Graphics] id=[15e7]
+Vulkan device type 1
+Vulkan driverversion=[0x00800117] uint=[8388887]
+Vulkan PSO: Cache data successfully loaded [size=964552,path=C:/Users/edonn/AppData/Local/Temp/MixedRealityETHZ/mARble run/vulkan_pso_cache.bin]
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.012053 seconds.
-- Loaded All Assemblies, in  1.250 seconds
-Native extension for UWP target not found
+Registered in 0.006723 seconds.
+- Loaded All Assemblies, in  0.327 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 234 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.525 seconds
-Domain Reload Profiling: 1773ms
-	BeginReloadAssembly (986ms)
+- Finished resetting the current domain, in  0.415 seconds
+Domain Reload Profiling: 741ms
+	BeginReloadAssembly (95ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (60ms)
-	LoadAllAssembliesAndSetupDomain (156ms)
-		LoadAssemblies (981ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (94ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (154ms)
-			TypeCache.Refresh (152ms)
-				TypeCache.ScanAssembly (138ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (121ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (525ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (416ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (484ms)
+		SetupLoadedEditorAssemblies (359ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (327ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (90ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (108ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,8 +508,7 @@ Domain Reload Profiling: 1773ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.443 seconds
-Native extension for UWP target not found
+- Loaded All Assemblies, in  1.742 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -144,47 +528,48 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.886 seconds
-Domain Reload Profiling: 6321ms
-	BeginReloadAssembly (132ms)
+- Finished resetting the current domain, in  1.319 seconds
+Domain Reload Profiling: 3055ms
+	BeginReloadAssembly (199ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (3219ms)
-		LoadAssemblies (2916ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (1433ms)
+		LoadAssemblies (803ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (379ms)
-			TypeCache.Refresh (320ms)
-				TypeCache.ScanAssembly (294ms)
-			ScanForSourceGeneratedMonoScriptInfo (40ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (2887ms)
+		AnalyzeDomain (736ms)
+			TypeCache.Refresh (632ms)
+				TypeCache.ScanAssembly (582ms)
+			ScanForSourceGeneratedMonoScriptInfo (80ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1319ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2679ms)
+		SetupLoadedEditorAssemblies (1046ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (817ms)
-			ProcessInitializeOnLoadMethodAttributes (1719ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (151ms)
+			ProcessInitializeOnLoadAttributes (623ms)
+			ProcessInitializeOnLoadMethodAttributes (240ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 66.18 ms, found 22 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9302 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 219 unused Assets / (4.0 MB). Loaded Objects now: 9709.
-Memory consumption went from 345.4 MB to 341.4 MB.
-Total: 6.925500 ms (FindLiveObjects: 0.829200 ms CreateObjectMapping: 0.260100 ms MarkObjects: 4.143400 ms  DeleteObjects: 1.691800 ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 28.42 ms, found 21 plugins.
+Preloading 0 native plugins for Editor in 0.01 ms.
+Unloading 9165 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 156 unused Assets / (4.0 MB). Loaded Objects now: 9639.
+Memory consumption went from 343.4 MB to 339.5 MB.
+Total: 13.314600 ms (FindLiveObjects: 1.586100 ms CreateObjectMapping: 0.536100 ms MarkObjects: 7.891700 ms  DeleteObjects: 3.299200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -195,13 +580,221 @@ AssetImportParameters requested are different than current active one (requested
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/MagicLeapEyeTrackerNativeTypes.cs: f4c81951f4f7393b5fc615a677d09263 -> 9ea260d4a0cf112cfa0e2a803709f416
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/precompiled-assembly-types:MagicLeap.SDK.Editor: d5f0a4141f4011bafda4217f14dc78e4 -> 7168c49a29842d00c5abe72538cc2d65
-  custom:scripting/monoscript/fileName/MagicLeapEyeTrackerTypes.cs: 88f84aecfc0f9142ba7bd6d630cf8ba3 -> c6098ec37188278cd44eb6cb8eeedd5f
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/precompiled-assembly-types:MagicLeap.SDK: 7bcf5f0c42cc87998f53b5d58f888c68 -> e7d23ba61a3885fcc5de2113de64f294
-  custom:scripting/monoscript/fileName/MagicLeapEyeTrackerFeature.cs: 55ab42a89eac5fb4c9f5519974bea9b6 -> d40ac1c5383c0996b4f3130192942971
+========================================================================
+Received Import Request.
+  Time since last request: 517505.141134 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a2c5b7530d158fb413f60de1f43660d5') in 0.002471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Scenes/CubeSampleScene.unity
+  artifactKey: Guid(d8e5539cfe69cfe49ad00478b7b3c6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CubeSampleScene.unity using Guid(d8e5539cfe69cfe49ad00478b7b3c6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9ea8604490fcffb28dbdd94ba8812384') in 0.000823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 586.848996 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '46685972e9e3a7db8a083b64173225e5') in 0.011636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/XR/Settings/OpenXR Package Settings.asset
+  artifactKey: Guid(cdbdcef10d883de4b8f2d726827756b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Settings/OpenXR Package Settings.asset using Guid(cdbdcef10d883de4b8f2d726827756b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '6742172866ab9dedb3ccb8d9835b2a36') in 0.012929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Creator Kit - Puzzle/Art/Textures/Environment/Pot_DefaultMaterial_Normal.png
+  artifactKey: Guid(dbe49c75a562a51418228a421045f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Creator Kit - Puzzle/Art/Textures/Environment/Pot_DefaultMaterial_Normal.png using Guid(dbe49c75a562a51418228a421045f35f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '76d8a3f0f25ca5b095303a2269a2435d') in 0.089191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 122.217428 seconds.
+  path: Packages/org.mixedrealitytoolkit.input/Interactors/Ray/MRTKRayInteractor.cs
+  artifactKey: Guid(e85416945309f8244a5715a2ec5c254f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/org.mixedrealitytoolkit.input/Interactors/Ray/MRTKRayInteractor.cs using Guid(e85416945309f8244a5715a2ec5c254f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '22c60a6eee3f45873ece5126b6348a74') in 0.000922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.599165 seconds.
+  path: Packages/org.mixedrealitytoolkit.input/Interactors/Ray
+  artifactKey: Guid(cd342127e4d8a8749bc74e84b89cccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/org.mixedrealitytoolkit.input/Interactors/Ray using Guid(cd342127e4d8a8749bc74e84b89cccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a1f39a9979a1a7ed05ee9e00ffd39984') in 0.000750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.742782 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine.psd
+  artifactKey: Guid(8bc445bb79654bf496c92d0407840a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine.psd using Guid(8bc445bb79654bf496c92d0407840a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3ae45e147d431a4d663896f8eff4209f') in 0.014676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine.psd
+  artifactKey: Guid(0d9a36012a224080966c7b55896aa0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine.psd using Guid(0d9a36012a224080966c7b55896aa0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '058eb4079d61d796e46dc894a3b2717d') in 0.017684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidLine.psd
+  artifactKey: Guid(c2f7f6a88b4c4f20a53deb72f3d9144c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidLine.psd using Guid(c2f7f6a88b4c4f20a53deb72f3d9144c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c92b2f29cfa9db2cc0372681eefc89ce') in 0.017632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.392710 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelinePingPong.png
+  artifactKey: Guid(d3b5c4f7d6b94f64085b3713bffa680e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelinePingPong.png using Guid(d3b5c4f7d6b94f64085b3713bffa680e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '49a4fe8875cc6adb9756266d949fc848') in 0.013407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelinePlayRange.png
+  artifactKey: Guid(70e3f118652b9094885689730ad3a47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelinePlayRange.png using Guid(70e3f118652b9094885689730ad3a47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'eadf2dd55e5ff2ef403250fd9898aee4') in 0.016214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.211728 seconds.
+  path: Packages/com.unity.cinemachine/Editor/EditorResources/Handles/Dark-Selected/FarNearClip.png
+  artifactKey: Guid(3438c1a20bf054a9f987a531b43f0a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Handles/Dark-Selected/FarNearClip.png using Guid(3438c1a20bf054a9f987a531b43f0a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8f13520d39a2869fc824b634561dbf2b') in 0.018829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Packages/com.unity.cinemachine/Editor/EditorResources/Handles/Light-Selected/FarNearClip.png
+  artifactKey: Guid(741a8111b35484dd283a7008a3a8373b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.cinemachine/Editor/EditorResources/Handles/Light-Selected/FarNearClip.png using Guid(741a8111b35484dd283a7008a3a8373b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f276201c7dfc75c52dcb22b991e3346e') in 0.007847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.715 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.196 seconds
+Domain Reload Profiling: 2905ms
+	BeginReloadAssembly (191ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (437ms)
+		LoadAssemblies (425ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (55ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2196ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1066ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (608ms)
+			ProcessInitializeOnLoadMethodAttributes (301ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 18.53 ms, found 21 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 137 unused Assets / (3.9 MB). Loaded Objects now: 9667.
+Memory consumption went from 364.2 MB to 360.3 MB.
+Total: 6.412500 ms (FindLiveObjects: 0.666100 ms CreateObjectMapping: 0.422400 ms MarkObjects: 3.750100 ms  DeleteObjects: 1.572800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Eraser.cs: b4c4360fd2c48d58316e5bfd32cc2499 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 30ad31ef7a8f367d59b9bb9991bf9bf9 -> 8cdae24ec072ced0523dcff68b507734
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 

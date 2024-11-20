@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.Splines;
 using Unity.Mathematics;
 
-public class VRPathDrawer : MonoBehaviour
+public class Draw_with_meshes : MonoBehaviour
 {
     public XRNode controllerNode = XRNode.RightHand; // Choose which controller to use
     public float minDistance = 0.01f; // Minimum distance between points and construction points
@@ -37,7 +37,7 @@ public class VRPathDrawer : MonoBehaviour
     private List<int> tris = new List<int>();
 
     //number of vertices around each single point (dont change atm)
-    private int num_vertices_per_point = 4;
+    private const int num_vertices_per_point = 4;
     //distance of vertices generated from the spline
     private float width = 1.0f;
 
@@ -195,7 +195,7 @@ public class VRPathDrawer : MonoBehaviour
         }
         //save the start/endpoints for connection later
         spline_startpoint_indices.Add(startpoint_index);
-        spline_endpoint_indices.Add(startpoint_index + (num_vertices_per_point * new_point_counter);
+        spline_endpoint_indices.Add(startpoint_index + (num_vertices_per_point * new_point_counter));
     }
 
 
@@ -212,7 +212,7 @@ public class VRPathDrawer : MonoBehaviour
     //connect vertices of 2 points
     void FillFaces_single_step(int offset1, int offset2)
     {
-        for (int i = 0; i < numVertsPerPoint - 1; i++)
+        for (int i = 0; i < num_vertices_per_point - 1; i++)
         {
             tris.Add(offset1 + i);
             tris.Add(offset2 + i);
@@ -222,12 +222,12 @@ public class VRPathDrawer : MonoBehaviour
             tris.Add(offset2 + i + 1);
             tris.Add(offset2 + i);
         }
-        tris.Add(offset1 + numVertsPerPoint - 1);
-        tris.Add(offset2 + numVertsPerPoint - 1);
+        tris.Add(offset1 + num_vertices_per_point - 1);
+        tris.Add(offset2 + num_vertices_per_point - 1);
         tris.Add(offset1);
 
         tris.Add(offset1);
         tris.Add(offset2);
-        tris.Add(offset2 + numVertsPerPoint - 1);
+        tris.Add(offset2 + num_vertices_per_point - 1);
     }
 }
