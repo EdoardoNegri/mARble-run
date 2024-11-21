@@ -10,13 +10,13 @@ public class VRPathDrawer : MonoBehaviour
     public float minDistance = 0.01f; // Minimum distance between points and construction points
     public float maxDistToConnect = 0.02f;
     //public GameObject rampPrefab; // Prefab for the line renderer
-    
+
     private Spline spline;
     private Vector3 lastPoint;
     private bool isDrawing = false;
     //private List<GameObject> segments = new List<GameObject>();
     private GameObject segment;
-    
+
     private Vector3 currStartPoint;
     private Vector3 currEndPoint;
 
@@ -120,7 +120,7 @@ public class VRPathDrawer : MonoBehaviour
 
 
         //We take the endpoints of the newly generated spline
-        Vector3 new_startpoint = spline_startpoint_points[spline_startpoint_points.Count-1];
+        Vector3 new_startpoint = spline_startpoint_points[spline_startpoint_points.Count - 1];
         int new_startpoint_index = spline_startpoint_indices[spline_startpoint_indices.Count - 1];
         Vector3 new_endpoint = spline_endpoint_points[spline_endpoint_points.Count - 1];
         int new_endpoint_index = spline_endpoint_indices[spline_endpoint_indices.Count - 1];
@@ -131,7 +131,7 @@ public class VRPathDrawer : MonoBehaviour
         //find another startpoint to connect new endpoint to (always start->end)
         float dist = float.MaxValue;
 
-        for(int i = 0; i < spline_startpoint_points.Count-1; i++)
+        for (int i = 0; i < spline_startpoint_points.Count - 1; i++)
         {
             if (Vector3.Distance(new_endpoint, spline_startpoint_points[i]) <= maxDistToConnect)
             {
@@ -140,7 +140,7 @@ public class VRPathDrawer : MonoBehaviour
                     start_connection_index = spline_startpoint_indices[i];
                 }
             }
-                
+
 
         }
 
