@@ -160,7 +160,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.MixedRealityETHZ.mARblerun
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -925,13 +926,13 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 2fc2e09a-09f5-4c79-8547-59433bed64c5
+  cloudProjectId: 957b61bd-5cdf-41eb-b4d9-aa7ac07c5b24
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: pomsarc
+  projectName: mARble run
+  organizationId: sjahanzad
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
