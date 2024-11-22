@@ -34,12 +34,12 @@ public class VRPathDrawer : MonoBehaviour
     private List<Vector3> spline_endpoint_points = new List<Vector3>();
 
     //holds the mesh elements
-    private List<Vector3> vertices = new List<Vector3>();
-    private List<Vector2> uvs = new List<Vector2>();
+    private List<List<Vector3>> vertice_segments = new List<List<Vector3>>();
     private List<int> tris = new List<int>();
 
     //number of vertices around each single point (dont change atm)
-    private int numVertsPerPoint = 4;
+    private int numVertsPerPoint = 9;
+    private int middlePointVertexOffset = 3;
     //distance of vertices generated from the spline
     private float width = 1.0f;
 
@@ -99,119 +99,156 @@ public class VRPathDrawer : MonoBehaviour
         currEndPoint = lastPoint;
 
         //Create a mesh along for this spline (All vertices are created here)
-        ConstructRoute();
-        //save the start end endpoints for connections
-        spline_startpoint_points.Add(currStartPoint);
-        spline_endpoint_points.Add(currEndPoint);
-        //Add Connecting Faces
-        ConnectEndpoints();
+        addVerticeSegment();
+        
+       
 
-        mesh.SetVertices(vertices.ToArray());
-        mesh.SetTriangles(tris.ToArray(), 0);
+    }
 
+    void eraseSegment(Vector3 position)
+    {
+        int seg_to_remove = -1;
+        float dist = float.MaxValue;
+        for (int i = 0; i < vertice_segments.Count; i++)
+        {
+            for (int j = 0; j < vertice_segments[i].Count; j++)
+            {
+                if (((float)Vector3.Distance(position, vertice_segments[i][j])) <= maxDistToErase)
+                {
+                    if (((float)Vector3.Distance(position, vertice_segments[i][j])) < dist)
+                    {
+                        dist = ((float)Vector3.Distance(position, vertice_segments[i][j]));
+                        seg_to_remove = i;
+                        
+
+                    }
+                }
+            }
+        }
+        
+        if (seg_to_remove >= 0)
+        {
+            vertice_segments.RemoveAt(seg_to_remove);
+            ConstructRoute();
+            
+        }
     }
 
 
     void ConnectEndpoints()
     {
-        //segment = new GameObject("Segment");
-        //segment.tag = "Route";
-        //Instantiate(new GameObject("Connector01"), currStartPoint, Quaternion.identity, segment.transform);
-        //Instantiate(new GameObject("Connector02"), currEndPoint, Quaternion.identity , segment.transform);
+        bool[] start_isconnected = new bool[spline_startpoint_indices.Count];
+        bool[] end_isconnected = new bool[spline_endpoint_indices.Count];
 
-
-        //We take the endpoints of the newly generated spline
-        Vector3 new_startpoint = spline_startpoint_points[spline_startpoint_points.Count - 1];
-        int new_startpoint_index = spline_startpoint_indices[spline_startpoint_indices.Count - 1];
-        Vector3 new_endpoint = spline_endpoint_points[spline_endpoint_points.Count - 1];
-        int new_endpoint_index = spline_endpoint_indices[spline_endpoint_indices.Count - 1];
-
-        int start_connection_index = -1;
-        int end_connection_index = -1;
-
-        //find another startpoint to connect new endpoint to (always start->end)
-        float dist = float.MaxValue;
-
-        for (int i = 0; i < spline_startpoint_points.Count - 1; i++)
+        for (int s = 0; s < spline_startpoint_indices.Count; s++)
         {
-            if (Vector3.Distance(new_endpoint, spline_startpoint_points[i]) <= maxDistToConnect)
+            float dist = float.MaxValue;
+            int start_connection_index = s;
+            int end_connection_index = -1;
+            for (int e = 0; e < spline_endpoint_indices.Count; e++)
             {
-                if (Vector3.Distance(new_endpoint, spline_startpoint_points[i]) < dist)
+                if (((float)Vector3.Distance(spline_startpoint_points[s], spline_endpoint_points[e])) <= maxDistToConnect)
                 {
-                    start_connection_index = spline_startpoint_indices[i];
+
+                    if (((float)Vector3.Distance(spline_startpoint_points[s], spline_endpoint_points[e])) < dist)
+                    {
+                        dist = ((float)Vector3.Distance(spline_startpoint_points[s], spline_endpoint_points[e]));
+                        end_connection_index = e;
+
+                    }
                 }
             }
+            if (end_connection_index >= 0)
+            {
+                FillFaces_single_step(spline_endpoint_indices[end_connection_index], spline_startpoint_indices[start_connection_index]);
+                start_isconnected[start_connection_index] = true;
+                end_isconnected[end_connection_index] = true;
 
+            }
 
         }
 
-        //find another endpoint to connect new startpoint to (always start->end)
-        dist = float.MaxValue;
-
-        for (int i = 0; i < spline_endpoint_points.Count - 1; i++)
+        for (int i = 0; i < start_isconnected.Length; i++)
         {
-            if (Vector3.Distance(new_startpoint, spline_endpoint_points[i]) <= maxDistToConnect)
+            if (!start_isconnected[i])
             {
-                if (Vector3.Distance(new_startpoint, spline_endpoint_points[i]) < dist)
-                {
-                    end_connection_index = spline_endpoint_indices[i];
-                }
+                FillFaces_stops_start(spline_startpoint_indices[i]);
             }
         }
-
-        //make the additional faces
-        if (start_connection_index >= 0)
+        for (int i = 0; i < end_isconnected.Length; i++)
         {
-            FillFaces_single_step(new_endpoint_index, start_connection_index);
-        }
-        if (end_connection_index >= 0)
-        {
-            FillFaces_single_step(end_connection_index, new_startpoint_index);
+            if (!end_isconnected[i])
+            {
+                FillFaces_stops_end(spline_endpoint_indices[i]);
+            }
         }
 
     }
 
 
-
-
-    void ConstructRoute()
+    void addVerticeSegment()
     {
-        //float percentage = minDistance / spline.GetLength();
-        float percentage = 0.1f;
-        int startpoint_index = vertices.Count;
-        int new_point_counter = 0;
+
+        List<Vector3> curr_vertice_segment = new List<Vector3>();
+        float percentage = 0.2f;
         for (float t = 0f; t <= 1; t += percentage)
         {
 
             if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
             {
-                new_point_counter++;
-                //Instantiate(rampPrefab, position, Quaternion.LookRotation(tangent), segment.transform);
-
-
-                //atm Generate 4 vertices around the points in shape in a V shape
-
-
                 Vector3 right = Vector3.Cross(tangent, upVector).normalized;
+                Vector3 left = -right;
+                Vector3 down = -upVector;
 
-                vertices.Add(((Vector3)position) + (right * width));
-                vertices.Add(((Vector3)position) + (-((Vector3)upVector) * width));
-                vertices.Add(((Vector3)position) + (-right * width));
-                vertices.Add(((Vector3)position) + (-((Vector3)upVector) * width * 1.5f));
+                //the (((Vector3)upVector)*width) is just there to move all points up a bit without redoing everything
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
+
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
+
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
+                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
+
+
             }
         }
-        //save the start/endpoints for connection later
-        spline_startpoint_indices.Add(startpoint_index);
-        spline_endpoint_indices.Add(startpoint_index + (numVertsPerPoint * (new_point_counter - 1)));
-        FillFaces_along_spline(startpoint_index, startpoint_index + (numVertsPerPoint * (new_point_counter - 1)));
-        for (int i = 0; i < spline_startpoint_indices.Count; i++)
+
+        vertice_segments.Add(curr_vertice_segment);
+        ConstructRoute();
+    }
+
+
+    void ConstructRoute()
+    {
+        mesh.Clear();
+        int vertex_counter = 0;
+        List<Vector3> vertices = new List<Vector3>();
+        tris.Clear();
+        spline_startpoint_indices = new List<int>();
+        spline_endpoint_indices = new List<int>();
+        spline_startpoint_points = new List<Vector3>();
+        spline_endpoint_points = new List<Vector3>();
+        for (int seg_ind = 0; seg_ind < vertice_segments.Count; seg_ind++)
         {
-            print(spline_startpoint_indices[i]);
+            int first = 0;
+            int last = vertice_segments[seg_ind].Count - numVertsPerPoint;
+            spline_startpoint_indices.Add(vertex_counter);
+            spline_endpoint_indices.Add(vertex_counter + last);
+            spline_startpoint_points.Add(vertice_segments[seg_ind][first + middlePointVertexOffset]);
+            spline_endpoint_points.Add(vertice_segments[seg_ind][last + middlePointVertexOffset]);
+            vertices.AddRange(vertice_segments[seg_ind]);
+            FillFaces_along_spline(vertex_counter + first, vertex_counter + last);
+
+            vertex_counter += vertice_segments[seg_ind].Count;
+
         }
-        for (int i = 0; i < spline_endpoint_indices.Count; i++)
-        {
-            print(spline_endpoint_indices[i]);
-        }
+        ConnectEndpoints();
+        mesh.SetVertices(vertices.ToArray());
+        mesh.SetTriangles(tris.ToArray(), 0);
     }
 
 
@@ -248,6 +285,68 @@ public class VRPathDrawer : MonoBehaviour
         tris.Add(offset1);
         tris.Add(offset2 + numVertsPerPoint - 1);
 
+
+    }
+    void FillFaces_stops_start(int offset)
+    {
+        tris.Add(offset + 0);
+        tris.Add(offset + 1);
+        tris.Add(offset + 8);
+
+        tris.Add(offset + 1);
+        tris.Add(offset + 2);
+        tris.Add(offset + 8);
+
+        tris.Add(offset + 2);
+        tris.Add(offset + 3);
+        tris.Add(offset + 8);
+
+        tris.Add(offset + 3);
+        tris.Add(offset + 7);
+        tris.Add(offset + 8);
+
+        tris.Add(offset + 3);
+        tris.Add(offset + 4);
+        tris.Add(offset + 7);
+
+        tris.Add(offset + 4);
+        tris.Add(offset + 5);
+        tris.Add(offset + 7);
+
+        tris.Add(offset + 5);
+        tris.Add(offset + 6);
+        tris.Add(offset + 7);
+    }
+
+    void FillFaces_stops_end(int offset)
+    {
+        tris.Add(offset + 8);
+        tris.Add(offset + 1);
+        tris.Add(offset + 0);
+
+        tris.Add(offset + 8);
+        tris.Add(offset + 2);
+        tris.Add(offset + 1);
+
+        tris.Add(offset + 8);
+        tris.Add(offset + 3);
+        tris.Add(offset + 2);
+
+        tris.Add(offset + 8);
+        tris.Add(offset + 7);
+        tris.Add(offset + 3);
+
+        tris.Add(offset + 7);
+        tris.Add(offset + 4);
+        tris.Add(offset + 3);
+
+        tris.Add(offset + 7);
+        tris.Add(offset + 5);
+        tris.Add(offset + 4);
+
+        tris.Add(offset + 7);
+        tris.Add(offset + 6);
+        tris.Add(offset + 5);
 
     }
 }
