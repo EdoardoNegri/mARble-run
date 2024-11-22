@@ -1,0 +1,495 @@
+Unity Editor version:    2022.3.48f1 (8bf49c377ebf)
+Branch:                  2022.3/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 14.2.1 (Build 23C71)
+Darwin version:          23.2.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.48f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+57862
+Successfully changed project path to: /Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run
+/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [140704273881984]  Target information:
+
+Player connection [140704273881984]  * "[IP] 172.17.0.53 [Port] 0 [Flags] 2 [Guid] 1008011473 [EditorId] 1008011473 [Version] 1048832 [Id] OSXEditor(0,Soroushs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [140704273881984] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [140704273881984] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 73.97 ms, found 14 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.48f1 (8bf49c377ebf)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.48f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: AMD Radeon Pro 560X (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 560X (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 560X (high power)
+Initializing Metal device caps: AMD Radeon Pro 560X
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.48f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.48f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.48f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56145
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.48f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.48f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.48f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.007073 seconds.
+- Loaded All Assemblies, in  0.553 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 132 ms
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.530 seconds
+Domain Reload Profiling: 1083ms
+	BeginReloadAssembly (177ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (230ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (219ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (198ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (531ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (472ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (274ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (132ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.604 seconds
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.295 seconds
+Domain Reload Profiling: 2915ms
+	BeginReloadAssembly (304ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (1177ms)
+		LoadAssemblies (799ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (516ms)
+			TypeCache.Refresh (417ms)
+				TypeCache.ScanAssembly (383ms)
+			ScanForSourceGeneratedMonoScriptInfo (60ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (1295ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (979ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (567ms)
+			ProcessInitializeOnLoadMethodAttributes (254ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.48f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.08 seconds
+Refreshing native plugins compatible for Editor in 11.20 ms, found 14 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9218 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 159 unused Assets / (4.1 MB). Loaded Objects now: 9691.
+Memory consumption went from 350.3 MB to 346.2 MB.
+Total: 8.797526 ms (FindLiveObjects: 0.680758 ms CreateObjectMapping: 0.838209 ms MarkObjects: 5.180761 ms  DeleteObjects: 2.096840 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HandVisualizer.cs:  -> 8c2309b1039b437800fa0aa153373d04
+  custom:scripting/precompiled-assembly-types:Unity.XR.Hands.Samples.VisualizerSample:  -> 3660e5313b691893deb189c088f55533
+  custom:scripting/monoscript/fileName/HandProcessor.cs:  -> bf8ea8f317f0da56bdd80564d32b67b5
+========================================================================
+Received Import Request.
+  Time since last request: 8166.934343 seconds.
+  path: Assets/MagicLeapUnityExamples/Assets/Prefabs/Meshing/WireframeCube.prefab
+  artifactKey: Guid(8c41ad6448b022e4b83a49b0c9971748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicLeapUnityExamples/Assets/Prefabs/Meshing/WireframeCube.prefab using Guid(8c41ad6448b022e4b83a49b0c9971748) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '47f110596daeb98540c72db847a8128f') in 0.592357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 65
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.187 seconds
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  3.572 seconds
+Domain Reload Profiling: 4759ms
+	BeginReloadAssembly (346ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (162ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (729ms)
+		LoadAssemblies (703ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (23ms)
+				TypeCache.ScanAssembly (4ms)
+			ScanForSourceGeneratedMonoScriptInfo (72ms)
+			ResolveRequiredComponents (35ms)
+	FinalizeReload (3573ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1632ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (995ms)
+			ProcessInitializeOnLoadMethodAttributes (458ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 12.85 ms, found 14 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8952 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 141 unused Assets / (4.2 MB). Loaded Objects now: 9755.
+Memory consumption went from 305.7 MB to 301.5 MB.
+Total: 10.849519 ms (FindLiveObjects: 0.732874 ms CreateObjectMapping: 0.778438 ms MarkObjects: 6.336548 ms  DeleteObjects: 3.000473 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/PixelSensorVisualizer.cs: 42b0523e742f8819c9be1155ab3b62c5 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionUtil.cs: 6ec29372cfa0c339f23945ee9a97d205 -> 
+  custom:scripting/monoscript/fileName/PixelSensorExample.cs: dfc11a64c01bbc9d18b12e179138f0b8 -> 
+  custom:scripting/monoscript/fileName/CommandLineSceneLauncher.cs: 30415481515d81c4b7790b9ab8827035 -> 
+  custom:scripting/monoscript/fileName/ControlExample.cs: d8c3f3d39d2e5fc18a248eabcf748599 -> 
+  custom:scripting/monoscript/fileName/UIButtonGroup.cs: 6d62282ba8860632d7c5a16b3008332a -> 
+  custom:scripting/monoscript/fileName/ContentDragHandler.cs: ba6d2310b5f5e7ba7603c0885975c291 -> 
+  custom:scripting/monoscript/fileName/GazeTrackingExample.cs: e2b689cb3bbb291355e59ade8156e996 -> 
+  custom:scripting/monoscript/fileName/SegmentedDimmerExample.cs: 7c5ac22cdd7be263c5db1bb3f5dbd2a3 -> 
+  custom:scripting/monoscript/fileName/UIScrollView.cs: 3c1f84d733578405f3052a2dac3bdd2a -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorsExample.cs: 5a25a227e25545db6efc440f86b7051d -> 
+  custom:scripting/monoscript/fileName/MarkerVisualizer.cs: 3b2fede1cd4fd4bc7898e53924e2ce5a -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Ruler.cs: 6e7291e619502eb492fe8f9aa524fb2c -> 
+  custom:scripting/monoscript/fileName/UISceneSelectionButton.cs: 3d5e9bf865b3ac046371a86d8859a452 -> 
+  custom:scripting/monoscript/fileName/ContentDragController.cs: b2cb436e9e5254f567c3d25d8ff5f93a -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionExample.cs: 9dbe612ca2a60781affe022b586dccb1 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d114cf0f0e7ef4cf404fec1ee4c14e7d -> 8de3776496ef3640e6580dbd075258ff
+  custom:scripting/monoscript/fileName/UIButton.cs: 2aaa69d01d0e3e112077ba777a492680 -> 
+  custom:scripting/monoscript/fileName/GazeVisualizer.cs: e96fbe337c7d3e467cf4f906d7c99422 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PixelSensorVisualizers.cs: 33d120d81a5c602bea8ae5f449ecb370 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 3fb65dfeabc19f5c2ae3c90bc6524d81 -> 497aca347f84798b7d5c2c55f0485ff5
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:scripting/monoscript/fileName/OcclusionExample.cs: c78216723b14d2e19ea02c64237db868 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PinchGesture.cs: 7d5e173b279a221862e98effbe7c787e -> bd87c2706e999d6273c69ae4b74bfadc
+  custom:scripting/monoscript/fileName/UIToggleButton.cs: 5095e016af486f645413da1a642e1426 -> 
+  custom:scripting/monoscript/fileName/UserCalibrationExample.cs: 7293b40631adefa9cfce57b2bd84b42e -> 
+  custom:scripting/monoscript/fileName/UserInterface.cs: c404b84a87fab6b92cbf30ec1ddf2354 -> 
+  custom:scripting/monoscript/fileName/PlanePrefabExample.cs: 128ce1a6ebbac3de45205237b1ae67f9 -> 
+  custom:scripting/monoscript/fileName/MeshingExample.cs: 7224f15a0afdd45fbee0549b127fcb6b -> 
+  custom:scripting/monoscript/fileName/PlaneExample.cs: 74abc8c330aaa416622d3a94bb5c798c -> 
+  custom:scripting/monoscript/fileName/PlaceFromCamera.cs: 9ebff91b7bcaa680ce9cad2d11109a66 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/GlobalDimmerExample.cs: 39dd0fc1ce726460c8763e5ed16342ad -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/MarkerTrackingExample.cs: 7948a61d87c3d7f61665011ebfb69c65 -> 
+  custom:scripting/monoscript/fileName/MeshingProjectile.cs: 86f7d4d3fc7b98dfb61141d40b8b94d2 -> 
+  custom:scripting/monoscript/fileName/MeshTexturedWireframeAdapter.cs: 0c637dab126db5f63e7fbed79d0717f9 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 32.29 ms, found 14 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (4.0 MB). Loaded Objects now: 9755.
+Memory consumption went from 163.8 MB to 159.8 MB.
+Total: 12.730668 ms (FindLiveObjects: 0.706919 ms CreateObjectMapping: 0.675348 ms MarkObjects: 9.600530 ms  DeleteObjects: 1.746848 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/PixelSensorVisualizer.cs: 42b0523e742f8819c9be1155ab3b62c5 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionUtil.cs: 6ec29372cfa0c339f23945ee9a97d205 -> 
+  custom:scripting/monoscript/fileName/PixelSensorExample.cs: dfc11a64c01bbc9d18b12e179138f0b8 -> 
+  custom:scripting/monoscript/fileName/CommandLineSceneLauncher.cs: 30415481515d81c4b7790b9ab8827035 -> 
+  custom:scripting/monoscript/fileName/ControlExample.cs: d8c3f3d39d2e5fc18a248eabcf748599 -> 
+  custom:scripting/monoscript/fileName/UIButtonGroup.cs: 6d62282ba8860632d7c5a16b3008332a -> 
+  custom:scripting/monoscript/fileName/ContentDragHandler.cs: ba6d2310b5f5e7ba7603c0885975c291 -> 
+  custom:scripting/monoscript/fileName/GazeTrackingExample.cs: e2b689cb3bbb291355e59ade8156e996 -> 
+  custom:scripting/monoscript/fileName/SegmentedDimmerExample.cs: 7c5ac22cdd7be263c5db1bb3f5dbd2a3 -> 
+  custom:scripting/monoscript/fileName/UIScrollView.cs: 3c1f84d733578405f3052a2dac3bdd2a -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorsExample.cs: 5a25a227e25545db6efc440f86b7051d -> 
+  custom:scripting/monoscript/fileName/MarkerVisualizer.cs: 3b2fede1cd4fd4bc7898e53924e2ce5a -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Ruler.cs: 6e7291e619502eb492fe8f9aa524fb2c -> 
+  custom:scripting/monoscript/fileName/UISceneSelectionButton.cs: 3d5e9bf865b3ac046371a86d8859a452 -> 
+  custom:scripting/monoscript/fileName/ContentDragController.cs: b2cb436e9e5254f567c3d25d8ff5f93a -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionExample.cs: 9dbe612ca2a60781affe022b586dccb1 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d114cf0f0e7ef4cf404fec1ee4c14e7d -> 8de3776496ef3640e6580dbd075258ff
+  custom:scripting/monoscript/fileName/UIButton.cs: 2aaa69d01d0e3e112077ba777a492680 -> 
+  custom:scripting/monoscript/fileName/GazeVisualizer.cs: e96fbe337c7d3e467cf4f906d7c99422 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PixelSensorVisualizers.cs: 33d120d81a5c602bea8ae5f449ecb370 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 3fb65dfeabc19f5c2ae3c90bc6524d81 -> 497aca347f84798b7d5c2c55f0485ff5
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:scripting/monoscript/fileName/OcclusionExample.cs: c78216723b14d2e19ea02c64237db868 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PinchGesture.cs: 7d5e173b279a221862e98effbe7c787e -> bd87c2706e999d6273c69ae4b74bfadc
+  custom:scripting/monoscript/fileName/UIToggleButton.cs: 5095e016af486f645413da1a642e1426 -> 
+  custom:scripting/monoscript/fileName/UserCalibrationExample.cs: 7293b40631adefa9cfce57b2bd84b42e -> 
+  custom:scripting/monoscript/fileName/UserInterface.cs: c404b84a87fab6b92cbf30ec1ddf2354 -> 
+  custom:scripting/monoscript/fileName/PlanePrefabExample.cs: 128ce1a6ebbac3de45205237b1ae67f9 -> 
+  custom:scripting/monoscript/fileName/MeshingExample.cs: 7224f15a0afdd45fbee0549b127fcb6b -> 
+  custom:scripting/monoscript/fileName/PlaneExample.cs: 74abc8c330aaa416622d3a94bb5c798c -> 
+  custom:scripting/monoscript/fileName/PlaceFromCamera.cs: 9ebff91b7bcaa680ce9cad2d11109a66 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/GlobalDimmerExample.cs: 39dd0fc1ce726460c8763e5ed16342ad -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/MarkerTrackingExample.cs: 7948a61d87c3d7f61665011ebfb69c65 -> 
+  custom:scripting/monoscript/fileName/MeshingProjectile.cs: 86f7d4d3fc7b98dfb61141d40b8b94d2 -> 
+  custom:scripting/monoscript/fileName/MeshTexturedWireframeAdapter.cs: 0c637dab126db5f63e7fbed79d0717f9 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 13.77 ms, found 14 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (4.1 MB). Loaded Objects now: 9755.
+Memory consumption went from 160.7 MB to 156.6 MB.
+Total: 56.585417 ms (FindLiveObjects: 1.439052 ms CreateObjectMapping: 0.812143 ms MarkObjects: 51.609959 ms  DeleteObjects: 2.723085 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/PixelSensorVisualizer.cs: 42b0523e742f8819c9be1155ab3b62c5 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionUtil.cs: 6ec29372cfa0c339f23945ee9a97d205 -> 
+  custom:scripting/monoscript/fileName/PixelSensorExample.cs: dfc11a64c01bbc9d18b12e179138f0b8 -> 
+  custom:scripting/monoscript/fileName/CommandLineSceneLauncher.cs: 30415481515d81c4b7790b9ab8827035 -> 
+  custom:scripting/monoscript/fileName/ControlExample.cs: d8c3f3d39d2e5fc18a248eabcf748599 -> 
+  custom:scripting/monoscript/fileName/UIButtonGroup.cs: 6d62282ba8860632d7c5a16b3008332a -> 
+  custom:scripting/monoscript/fileName/ContentDragHandler.cs: ba6d2310b5f5e7ba7603c0885975c291 -> 
+  custom:scripting/monoscript/fileName/GazeTrackingExample.cs: e2b689cb3bbb291355e59ade8156e996 -> 
+  custom:scripting/monoscript/fileName/SegmentedDimmerExample.cs: 7c5ac22cdd7be263c5db1bb3f5dbd2a3 -> 
+  custom:scripting/monoscript/fileName/UIScrollView.cs: 3c1f84d733578405f3052a2dac3bdd2a -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorsExample.cs: 5a25a227e25545db6efc440f86b7051d -> 
+  custom:scripting/monoscript/fileName/MarkerVisualizer.cs: 3b2fede1cd4fd4bc7898e53924e2ce5a -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Ruler.cs: 6e7291e619502eb492fe8f9aa524fb2c -> 
+  custom:scripting/monoscript/fileName/UISceneSelectionButton.cs: 3d5e9bf865b3ac046371a86d8859a452 -> 
+  custom:scripting/monoscript/fileName/ContentDragController.cs: b2cb436e9e5254f567c3d25d8ff5f93a -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionExample.cs: 9dbe612ca2a60781affe022b586dccb1 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d114cf0f0e7ef4cf404fec1ee4c14e7d -> 8de3776496ef3640e6580dbd075258ff
+  custom:scripting/monoscript/fileName/UIButton.cs: 2aaa69d01d0e3e112077ba777a492680 -> 
+  custom:scripting/monoscript/fileName/GazeVisualizer.cs: e96fbe337c7d3e467cf4f906d7c99422 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PixelSensorVisualizers.cs: 33d120d81a5c602bea8ae5f449ecb370 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 3fb65dfeabc19f5c2ae3c90bc6524d81 -> 497aca347f84798b7d5c2c55f0485ff5
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:scripting/monoscript/fileName/OcclusionExample.cs: c78216723b14d2e19ea02c64237db868 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PinchGesture.cs: 7d5e173b279a221862e98effbe7c787e -> bd87c2706e999d6273c69ae4b74bfadc
+  custom:scripting/monoscript/fileName/UIToggleButton.cs: 5095e016af486f645413da1a642e1426 -> 
+  custom:scripting/monoscript/fileName/UserCalibrationExample.cs: 7293b40631adefa9cfce57b2bd84b42e -> 
+  custom:scripting/monoscript/fileName/UserInterface.cs: c404b84a87fab6b92cbf30ec1ddf2354 -> 
+  custom:scripting/monoscript/fileName/PlanePrefabExample.cs: 128ce1a6ebbac3de45205237b1ae67f9 -> 
+  custom:scripting/monoscript/fileName/MeshingExample.cs: 7224f15a0afdd45fbee0549b127fcb6b -> 
+  custom:scripting/monoscript/fileName/PlaneExample.cs: 74abc8c330aaa416622d3a94bb5c798c -> 
+  custom:scripting/monoscript/fileName/PlaceFromCamera.cs: 9ebff91b7bcaa680ce9cad2d11109a66 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/GlobalDimmerExample.cs: 39dd0fc1ce726460c8763e5ed16342ad -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/MarkerTrackingExample.cs: 7948a61d87c3d7f61665011ebfb69c65 -> 
+  custom:scripting/monoscript/fileName/MeshingProjectile.cs: 86f7d4d3fc7b98dfb61141d40b8b94d2 -> 
+  custom:scripting/monoscript/fileName/MeshTexturedWireframeAdapter.cs: 0c637dab126db5f63e7fbed79d0717f9 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 701.387331 seconds.
+  path: Assets/MagicLeapUnityExamples/Assets/Prefabs/ML Rig (Hands).prefab
+  artifactKey: Guid(99cc318e79273db4e92278c439794505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicLeapUnityExamples/Assets/Prefabs/ML Rig (Hands).prefab using Guid(99cc318e79273db4e92278c439794505) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'd5e68c8ecd23fa3f9a171b28c5674f61') in 0.030709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/MagicLeapUnityExamples/Assets/Prefabs/UserInterface.prefab
+  artifactKey: Guid(e11acd7e824adcc43a4715c4f5daa2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicLeapUnityExamples/Assets/Prefabs/UserInterface.prefab using Guid(e11acd7e824adcc43a4715c4f5daa2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '514345dedf2e1b16dada3750f8cce09d') in 0.000578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/MagicLeapUnityExamples/Assets/Prefabs/UserInterface_headpose.prefab
+  artifactKey: Guid(6906f74934047d24e9a47bbdd1afb57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicLeapUnityExamples/Assets/Prefabs/UserInterface_headpose.prefab using Guid(6906f74934047d24e9a47bbdd1afb57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cb2db48f731a8536d43819604a231c31') in 0.000516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/MagicLeapUnityExamples/Assets/Prefabs/PlanePrefabExample.prefab
+  artifactKey: Guid(0e10e3657174ca74ea8719e5918cdaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicLeapUnityExamples/Assets/Prefabs/PlanePrefabExample.prefab using Guid(0e10e3657174ca74ea8719e5918cdaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '705ce7222ca3e0e635a661b527743a7b') in 0.000639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/MagicLeapUnityExamples/Assets/Prefabs/UISceneSelectionButton.prefab
+  artifactKey: Guid(595bf53a41798c640b0eb12bcad31e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MagicLeapUnityExamples/Assets/Prefabs/UISceneSelectionButton.prefab using Guid(595bf53a41798c640b0eb12bcad31e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8f9ac8c13c0206a175624cd32eb77040') in 0.000471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting
