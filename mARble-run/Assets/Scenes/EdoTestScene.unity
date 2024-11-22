@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b89ff1bf2684e3cae4038e34102985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshManager: {fileID: 0}
+  meshManager: {fileID: 455652312}
 --- !u!4 &53019702
 Transform:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MeshPrefab: {fileID: 96118017305851066, guid: 325f6e6feaccd47449b3c7e810321b91,
     type: 3}
-  m_Density: 0.5
+  m_Density: 1
   m_Normals: 1
   m_Tangents: 0
   m_TextureCoordinates: 0
@@ -295,8 +295,62 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 455652311}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 427083769265065177, guid: fd8105087379f4dc48f6b69d67619d68,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1519304074}
   m_SourcePrefab: {fileID: 100100000, guid: fd8105087379f4dc48f6b69d67619d68, type: 3}
+--- !u!1 &1519304073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 427083769265065177, guid: fd8105087379f4dc48f6b69d67619d68,
+    type: 3}
+  m_PrefabInstance: {fileID: 1519304072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1519304074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519304073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1581996472
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +383,7 @@ MonoBehaviour:
   controllerNode: 6
   minDistance: 0.01
   maxDistToConnect: 1
+  maxDistToErase: 0.02
   mat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
 --- !u!4 &1581996474
 Transform:
@@ -485,7 +540,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 8729065931958343111, guid: 95ea0c742e4c3b8408e44d32bc9c6ded,
+      objectReference: {fileID: 6009427205560215281, guid: 0842f3c57407ac1408b4838921ac87f5,
         type: 3}
     - target: {fileID: 4192054762077094472, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
@@ -496,13 +551,13 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 3025229355801648913, guid: 2b9419d426dc92846bdb6a0a5a7eeff5,
+      objectReference: {fileID: 8443790720986270114, guid: 353b9550d91ef2f419d8bd867faea655,
         type: 3}
     - target: {fileID: 5890401568212332818, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 48951904657697458, guid: 2a77e62e6402edc48969a471a2b5fd27,
+      objectReference: {fileID: 2008190811112888317, guid: ebd824613552eb344870e1cf90a32e5e,
         type: 3}
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
