@@ -1,0 +1,270 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp-Editor.csproj": {}
+  },
+  "projects": {
+    "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp-Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp-Editor.csproj",
+        "projectName": "Assembly-CSharp-Editor",
+        "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp-Editor.csproj",
+        "packagesPath": "/Users/soroush/.nuget/packages/",
+        "outputPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/obj/Debug/Assembly-CSharp-Editor/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/soroush/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp.csproj"
+              },
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/MagicLeap.SetupTool.Editor.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/MagicLeap.SetupTool.Editor.csproj"
+              },
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj"
+              },
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Unity.XR.Hands.Samples.VisualizerSample.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Assembly-CSharp.csproj",
+        "packagesPath": "/Users/soroush/.nuget/packages/",
+        "outputPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/obj/Debug/Assembly-CSharp/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/soroush/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/MagicLeap.SetupTool.Editor.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/MagicLeap.SetupTool.Editor.csproj"
+              },
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj"
+              },
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Unity.XR.Hands.Samples.VisualizerSample.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/MagicLeap.SetupTool.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/MagicLeap.SetupTool.Editor.csproj",
+        "projectName": "MagicLeap.SetupTool.Editor",
+        "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/MagicLeap.SetupTool.Editor.csproj",
+        "packagesPath": "/Users/soroush/.nuget/packages/",
+        "outputPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/obj/Debug/MagicLeap.SetupTool.Editor/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/soroush/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj": {
+                "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj",
+        "projectName": "ThirdParty.Bunny83.simpleJson",
+        "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/ThirdParty.Bunny83.simpleJson.csproj",
+        "packagesPath": "/Users/soroush/.nuget/packages/",
+        "outputPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/obj/Debug/ThirdParty.Bunny83.simpleJson/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/soroush/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Unity.XR.Hands.Samples.VisualizerSample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Unity.XR.Hands.Samples.VisualizerSample.csproj",
+        "projectName": "Unity.XR.Hands.Samples.VisualizerSample",
+        "projectPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Unity.XR.Hands.Samples.VisualizerSample.csproj",
+        "packagesPath": "/Users/soroush/.nuget/packages/",
+        "outputPath": "/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/obj/Debug/Unity.XR.Hands.Samples.VisualizerSample/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/soroush/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
