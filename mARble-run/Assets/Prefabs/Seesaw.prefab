@@ -149,8 +149,8 @@ HingeJoint:
     bounciness: 0.5
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 0.001
+  m_BreakTorque: 0.001
   m_EnableCollision: 1
   m_EnablePreprocessing: 1
   m_MassScale: 1
