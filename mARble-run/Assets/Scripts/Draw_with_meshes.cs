@@ -9,6 +9,8 @@ public class VRPathDrawer : MonoBehaviour
     public XRNode controllerNode = XRNode.RightHand; // Choose which controller to use
     public float minDistance = 0.01f; // Minimum distance between points and construction points
     public float maxDistToConnect = 0.02f;
+
+    public float maxDistToErase = 0.02f;
     //public GameObject rampPrefab; // Prefab for the line renderer
 
     private Spline spline;
