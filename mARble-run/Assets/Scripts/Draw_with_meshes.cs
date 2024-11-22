@@ -48,6 +48,7 @@ public class VRPathDrawer : MonoBehaviour
         mesh = new Mesh();
         meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter));
         meshObject.GetComponent<MeshFilter>().mesh = mesh;
+        meshObject.GetComponent<MeshRenderer>().material = mat;
     }
 
     void Update()
