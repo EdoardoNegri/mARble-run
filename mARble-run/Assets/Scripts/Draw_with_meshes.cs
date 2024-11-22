@@ -39,7 +39,7 @@ public class VRPathDrawer : MonoBehaviour
     private List<int> tris = new List<int>();
 
     //number of vertices around each single point (dont change atm)
-    private int num_vertices_per_point = 4;
+    private int numVertsPerPoint = 4;
     //distance of vertices generated from the spline
     private float width = 1.0f;
 

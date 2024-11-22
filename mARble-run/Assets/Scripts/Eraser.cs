@@ -1,36 +1,38 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR;
 
+//this needs to be attached to the object you want to delete
 public class VRObjectDeleter : MonoBehaviour
 {
-    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor;
-    public InputHelpers.Button deleteButton = InputHelpers.Button.PrimaryButton;
-    public float deleteButtonThreshold = 0.1f;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
+    public string buttonName = "Fire1"; // Replace with your input button name (e.g., "Submit" or "Fire1")
+    private bool isInteracting = false; // Tracks if the object is currently interactable
 
-    private void Update()
+    void Awake()
     {
-        if (rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+        interactable.hoverEntered.AddListener(OnHoverEntered);
+        interactable.hoverExited.AddListener(OnHoverExited);
+    }
+
+    void Update()
+    {
+        // Check for button press while the object is interactable
+        if (isInteracting && Input.GetButtonDown(buttonName))
         {
-            var xrController = rayInteractor.GetComponent<XRBaseController>();
-            if (xrController != null)
-            {
-                var inputDevice = xrController.inputDevice;
-                InputHelpers.IsPressed(inputDevice, deleteButton, out bool isPressed, deleteButtonThreshold);
-                if (isPressed)
-                {
-                    TryDeleteObject(hit);
-                }
-            }
+            interactable.hoverEntered.RemoveListener(OnHoverEntered);
+            interactable.hoverExited.RemoveListener(OnHoverExited);
+            Destroy(gameObject);
         }
     }
 
-    private void TryDeleteObject(RaycastHit hit)
+    // Event Handlers
+    private void OnHoverEntered(HoverEnterEventArgs args)
     {
-        if (hit.collider.gameObject.CompareTag("Route"))
-        {
-            GameObject hitObject = hit.collider.gameObject;
-            Destroy(hitObject);
-        }
+        isInteracting = true;
+    }
+
+    private void OnHoverExited(HoverExitEventArgs args)
+    {
+        isInteracting = false;
     }
 }
