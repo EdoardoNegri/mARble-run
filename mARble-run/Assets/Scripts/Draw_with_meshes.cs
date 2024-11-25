@@ -46,7 +46,7 @@ public class VRPathDrawer : MonoBehaviour
     private int numVertsPerPoint = 9;
     private int middlePointVertexOffset = 3;
     //distance of vertices generated from the spline
-    private float width = 1.0f;
+    private float width = 0.05f;
 
     void Start()
     {
@@ -62,28 +62,35 @@ public class VRPathDrawer : MonoBehaviour
     {
         if (controller.IsTracked)
         {
-            bool triggerValue = (controller.TriggerValue > 0.2f);
+            // bool triggerValue = (controller.TriggerValue > 0.2f);
+            bool bumperValue = controller.BumperIsPressed;
+            bool buttonCondition = bumperValue;
 
-            if (triggerValue && !isDrawing)
+            if (buttonCondition && !isDrawing)
             {
                 StartDrawing();
             }
-            else if (triggerValue && isDrawing)
+            else if (buttonCondition && isDrawing)
             {
                 ContinueDrawing();
             }
-            else if (!triggerValue && isDrawing)
+            else if (!buttonCondition && isDrawing)
             {
                 StopDrawing();
             }
         }
     }
 
+    Vector3 GetControllerPosition()
+    {
+        return controller.Position;
+    }
+
     void StartDrawing()
     {
         spline = new Spline();
         isDrawing = true;
-        currStartPoint = controller.Position;
+        currStartPoint = GetControllerPosition();
         lastPoint = currStartPoint;
         Debug.Log($"Start Position: {currStartPoint}");
 
@@ -93,7 +100,7 @@ public class VRPathDrawer : MonoBehaviour
     void ContinueDrawing()
     {
         //maybe add an indicator of where you are drawing
-        Vector3 currentPoint = controller.Position;
+        Vector3 currentPoint = GetControllerPosition();
         Debug.Log($"Position: {currentPoint}");
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
@@ -109,6 +116,14 @@ public class VRPathDrawer : MonoBehaviour
 
         //Create a mesh along for this spline (All vertices are created here)
         addVerticeSegment();
+        foreach (var item in vertice_segments[vertice_segments.Count - 1])
+        {   
+            Debug.Log($"vertice Position: {item}");
+        }
+        foreach (var item in spline)
+        {
+            Debug.Log($"Spline Position: {item}");
+        }
         spline.Clear();
     }
 
