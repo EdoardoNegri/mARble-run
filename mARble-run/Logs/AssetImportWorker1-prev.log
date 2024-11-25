@@ -15,7 +15,7 @@ C:/Users/edonn/Code/Unity/mARble-run/mARble-run
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54772
+55730
 Successfully changed project path to: C:/Users/edonn/Code/Unity/mARble-run/mARble-run
 C:/Users/edonn/Code/Unity/mARble-run/mARble-run
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,14 +49,14 @@ C:/Users/edonn/Code/Unity/mARble-run/mARble-run
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2388]  Target information:
+Player connection [2276]  Target information:
 
-Player connection [2388]  * "[IP] 172.17.0.114 [Port] 0 [Flags] 2 [Guid] 1620419938 [EditorId] 1620419938 [Version] 1048832 [Id] WindowsEditor(7,EdoNe) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [2276]  * "[IP] 172.17.0.114 [Port] 0 [Flags] 2 [Guid] 1682018345 [EditorId] 1682018345 [Version] 1048832 [Id] WindowsEditor(7,EdoNe) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [2388] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [2388] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2276] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [2276] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 28.71 ms, found 21 plugins.
+Refreshing native plugins compatible for Editor in 45.21 ms, found 21 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.48f1 (8bf49c377ebf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/Resources/UnitySubsystems
@@ -161,8 +161,8 @@ Vulkan detection: 2
 [vulkan] Loaded instance function vkCmdEndDebugUtilsLabelEXT
 [vulkan] Loaded instance function vkCmdInsertDebugUtilsLabelEXT
 [Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=0000000000000000
-[Vulkan init] Physical Device 0000022B3D5614E0 [0]: "AMD Radeon (TM) Graphics" deviceType=1 vendorID=1002 deviceID=15e7
-[Vulkan init] Selected physical device 0000022B3D5614E0
+[Vulkan init] Physical Device 0000021F251F5760 [0]: "AMD Radeon (TM) Graphics" deviceType=1 vendorID=1002 deviceID=15e7
+[Vulkan init] Selected physical device 0000021F251F5760
 [Vulkan init] Graphics queue count=1
 [Vulkan init] extensions: count=148
 [Vulkan init] extensions: name=VK_AMD_buffer_marker [enabled=0, external=0]
@@ -454,52 +454,52 @@ Vulkan vendor=[ATI] id=[1002]
 Vulkan renderer=[AMD Radeon (TM) Graphics] id=[15e7]
 Vulkan device type 1
 Vulkan driverversion=[0x00800117] uint=[8388887]
-Vulkan PSO: Cache data successfully loaded [size=1629856,path=C:/Users/edonn/AppData/Local/Temp/MixedRealityETHZ/mARble run/vulkan_pso_cache.bin]
+Vulkan PSO: Cache data successfully loaded [size=1706820,path=C:/Users/edonn/AppData/Local/Temp/MixedRealityETHZ/mARble run/vulkan_pso_cache.bin]
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.48f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008657 seconds.
-- Loaded All Assemblies, in  0.408 seconds
+Registered in 0.009160 seconds.
+- Loaded All Assemblies, in  0.484 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.333 seconds
-Domain Reload Profiling: 740ms
-	BeginReloadAssembly (119ms)
+- Finished resetting the current domain, in  0.400 seconds
+Domain Reload Profiling: 883ms
+	BeginReloadAssembly (122ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (169ms)
-		LoadAssemblies (118ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (209ms)
+		LoadAssemblies (121ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (166ms)
-			TypeCache.Refresh (164ms)
-				TypeCache.ScanAssembly (148ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (203ms)
+				TypeCache.ScanAssembly (177ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (334ms)
+	FinalizeReload (401ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (284ms)
+		SetupLoadedEditorAssemblies (338ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (95ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (111ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (134ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
+			ProcessInitializeOnLoadAttributes (159ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -508,7 +508,7 @@ Domain Reload Profiling: 740ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.151 seconds
+- Loaded All Assemblies, in  1.090 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -528,48 +528,48 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.639 seconds
-Domain Reload Profiling: 2785ms
-	BeginReloadAssembly (254ms)
+- Finished resetting the current domain, in  1.613 seconds
+Domain Reload Profiling: 2698ms
+	BeginReloadAssembly (188ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (785ms)
-		LoadAssemblies (457ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (793ms)
+		LoadAssemblies (449ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (438ms)
-			TypeCache.Refresh (353ms)
-				TypeCache.ScanAssembly (323ms)
-			ScanForSourceGeneratedMonoScriptInfo (59ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1639ms)
+			TypeCache.Refresh (360ms)
+				TypeCache.ScanAssembly (331ms)
+			ScanForSourceGeneratedMonoScriptInfo (54ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1614ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1353ms)
+		SetupLoadedEditorAssemblies (1342ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (148ms)
-			ProcessInitializeOnLoadAttributes (880ms)
-			ProcessInitializeOnLoadMethodAttributes (288ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (157ms)
+			ProcessInitializeOnLoadAttributes (876ms)
+			ProcessInitializeOnLoadMethodAttributes (275ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 24.19 ms, found 21 plugins.
+Refreshing native plugins compatible for Editor in 24.94 ms, found 21 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 154 unused Assets / (3.9 MB). Loaded Objects now: 9642.
-Memory consumption went from 345.0 MB to 341.1 MB.
-Total: 10.422800 ms (FindLiveObjects: 1.438900 ms CreateObjectMapping: 0.744600 ms MarkObjects: 5.939000 ms  DeleteObjects: 2.298800 ms)
+Unloading 9218 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 157 unused Assets / (4.0 MB). Loaded Objects now: 9692.
+Memory consumption went from 350.4 MB to 346.5 MB.
+Total: 10.462600 ms (FindLiveObjects: 0.939700 ms CreateObjectMapping: 0.460300 ms MarkObjects: 6.599600 ms  DeleteObjects: 2.461300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -587,29 +587,30 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 694987.258934 seconds.
-  path: Assets/Prefabs/Funnel.prefab
-  artifactKey: Guid(95ea0c742e4c3b8408e44d32bc9c6ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Funnel.prefab using Guid(95ea0c742e4c3b8408e44d32bc9c6ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '654a8da5108ad38f2198c4ae92deb29e') in 0.404090 seconds
+  Time since last request: 702673.819258 seconds.
+  path: Assets/Prefabs/Store.prefab
+  artifactKey: Guid(d50f87de7933ae947b15bf49ca395703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Store.prefab using Guid(d50f87de7933ae947b15bf49ca395703) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '326a32d4c74569cb4aa3f6ab52d54232') in 0.105617 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 35
+Number of asset objects unloaded after import = 137
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Marble.prefab
+  artifactKey: Guid(47a7dae5249c1da449a9c374793537ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Marble.prefab using Guid(47a7dae5249c1da449a9c374793537ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ff69d634e5ed649a2f3618b45fa5194b') in 0.020561 seconds
+Refreshing native plugins compatible for Editor in 30.37 ms, found 21 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '8473a10024140f2d562ef30bbba460a3') in 0.466932 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
+Number of asset objects unloaded after import = 56
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.593 seconds
+- Loaded All Assemblies, in  0.678 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -625,1348 +626,517 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.286 seconds
-Domain Reload Profiling: 2873ms
-	BeginReloadAssembly (218ms)
+- Finished resetting the current domain, in  2.228 seconds
+Domain Reload Profiling: 2901ms
+	BeginReloadAssembly (220ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
+		CreateAndSetChildDomain (73ms)
 	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (13ms)
+	RebuildNativeTypeToScriptingClass (14ms)
 	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (287ms)
-		LoadAssemblies (350ms)
+	LoadAllAssembliesAndSetupDomain (369ms)
+		LoadAssemblies (371ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (30ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (2286ms)
+		AnalyzeDomain (91ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (3ms)
+			ScanForSourceGeneratedMonoScriptInfo (50ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (2228ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (1194ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (134ms)
-			ProcessInitializeOnLoadAttributes (740ms)
-			ProcessInitializeOnLoadMethodAttributes (287ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (34ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 19.16 ms, found 21 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 135 unused Assets / (3.9 MB). Loaded Objects now: 9707.
-Memory consumption went from 301.1 MB to 297.2 MB.
-Total: 7.035400 ms (FindLiveObjects: 0.735500 ms CreateObjectMapping: 0.312800 ms MarkObjects: 4.438700 ms  DeleteObjects: 1.546500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.527 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.980 seconds
-Domain Reload Profiling: 2502ms
-	BeginReloadAssembly (173ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (277ms)
-		LoadAssemblies (328ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (29ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1981ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (986ms)
-			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (17ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (120ms)
-			ProcessInitializeOnLoadAttributes (649ms)
-			ProcessInitializeOnLoadMethodAttributes (189ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (810ms)
+			ProcessInitializeOnLoadMethodAttributes (231ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 28.76 ms, found 21 plugins.
+Refreshing native plugins compatible for Editor in 20.80 ms, found 21 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 135 unused Assets / (3.9 MB). Loaded Objects now: 9726.
-Memory consumption went from 302.2 MB to 298.3 MB.
-Total: 9.854900 ms (FindLiveObjects: 0.813100 ms CreateObjectMapping: 0.556100 ms MarkObjects: 6.016000 ms  DeleteObjects: 2.466400 ms)
+Unloading 8951 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 138 unused Assets / (4.0 MB). Loaded Objects now: 9758.
+Memory consumption went from 368.8 MB to 364.8 MB.
+Total: 6.945700 ms (FindLiveObjects: 0.731800 ms CreateObjectMapping: 0.314500 ms MarkObjects: 4.165800 ms  DeleteObjects: 1.732000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/PixelSensorVisualizer.cs: 42b0523e742f8819c9be1155ab3b62c5 -> 
+  custom:scripting/monoscript/fileName/Spawner.cs: 7de732fab2c49f3068a483eb669d8d17 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionUtil.cs: 6ec29372cfa0c339f23945ee9a97d205 -> 
+  custom:scripting/monoscript/fileName/PixelSensorExample.cs: dfc11a64c01bbc9d18b12e179138f0b8 -> 
+  custom:scripting/monoscript/fileName/CommandLineSceneLauncher.cs: 30415481515d81c4b7790b9ab8827035 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ControlExample.cs: d8c3f3d39d2e5fc18a248eabcf748599 -> 
+  custom:scripting/monoscript/fileName/InteractivePuzzlePiece.cs: c198096a34fc233c8fc68225eecc1469 -> 
+  custom:scripting/monoscript/fileName/UIButtonGroup.cs: 6d62282ba8860632d7c5a16b3008332a -> 
+  custom:scripting/monoscript/fileName/ContentDragHandler.cs: ba6d2310b5f5e7ba7603c0885975c291 -> 
+  custom:scripting/monoscript/fileName/GazeTrackingExample.cs: e2b689cb3bbb291355e59ade8156e996 -> 
+  custom:scripting/monoscript/fileName/SegmentedDimmerExample.cs: 7c5ac22cdd7be263c5db1bb3f5dbd2a3 -> 
+  custom:scripting/monoscript/fileName/UIScrollView.cs: 3c1f84d733578405f3052a2dac3bdd2a -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorsExample.cs: 5a25a227e25545db6efc440f86b7051d -> 
+  custom:scripting/monoscript/fileName/Readme.cs: 5aedf578fb2663036982fb7b05aaf325 -> 
+  custom:scripting/monoscript/fileName/SceneCompletion.cs: 97da2fc31e1d72995a9e8fad24560fff -> 
+  custom:scripting/monoscript/fileName/AudioAdjustmentSettings.cs: 2a4e3c035a7fd12e26adf21077f4ab6c -> 
+  custom:scripting/monoscript/fileName/MarkerVisualizer.cs: 3b2fede1cd4fd4bc7898e53924e2ce5a -> 
+  custom:scripting/monoscript/fileName/SwingHammer.cs: af0eb2ba021b8d0cdba8677c1bf20b43 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Ruler.cs: 6e7291e619502eb492fe8f9aa524fb2c -> 
+  custom:scripting/monoscript/fileName/Eraser.cs: b4c4360fd2c48d58316e5bfd32cc2499 -> 
+  custom:scripting/monoscript/fileName/UISceneSelectionButton.cs: 3d5e9bf865b3ac046371a86d8859a452 -> 
+  custom:scripting/monoscript/fileName/SceneReferenceEditor.cs: 1c82c91dba278ffab57421a19ed235b0 -> 
+  custom:scripting/monoscript/fileName/ContentDragController.cs: b2cb436e9e5254f567c3d25d8ff5f93a -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SceneReferencesBuildSetup.cs: 8323d0c385bb50958be249b2e3129407 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/AssetReferencer.cs: 54f299414ab1226374117357ee731ce8 -> 
+  custom:scripting/monoscript/fileName/SceneMenuIcon.cs: 8323476cc7e4057047ffab3bb464df06 -> 
+  custom:scripting/monoscript/fileName/TargetTrigger.cs: ce1099b3c93e3d440fbb5622b3df0b05 -> 
+  custom:scripting/monoscript/fileName/SceneMenu.cs: d075e499f012aa1754ac643220781b8b -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/TargetGroupWeightControl.cs: 9e16c0020ba7773fb7403c9bfeeb2bae -> 
+  custom:scripting/monoscript/fileName/PuzzlePieceBox.cs: 3f8614b88c24b3c12a826475c85250ba -> 
+  custom:scripting/monoscript/fileName/Draw_with_meshes.cs: 9808484bf9c123f1e1477f8dc11f3c28 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 3bace0f925cecb83ea71c300131b6bb9 -> 
+  custom:scripting/monoscript/fileName/InteractivePuzzlePieceEditor.cs: 63e850ee7304f2045acc4acd486de705 -> 
+  custom:scripting/monoscript/fileName/FacialExpressionExample.cs: 9dbe612ca2a60781affe022b586dccb1 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 227997524a3ff4ef04203f2c8a828dc3 -> 
+  custom:scripting/monoscript/fileName/SceneReference.cs: 735c1a3fbefaa3a6c1de7b2e3613377a -> 
+  custom:scripting/monoscript/fileName/UIButton.cs: 2aaa69d01d0e3e112077ba777a492680 -> 
+  custom:scripting/monoscript/fileName/GazeVisualizer.cs: e96fbe337c7d3e467cf4f906d7c99422 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/RotationalVelocityAudio.cs: 5eec43cf09249b069bac146169c793c3 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MarbleAudio.cs: c62c14db33096f05417eba7a153298da -> 
+  custom:scripting/monoscript/fileName/PixelSensorVisualizers.cs: 33d120d81a5c602bea8ae5f449ecb370 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 3fb65dfeabc19f5c2ae3c90bc6524d81 -> 497aca347f84798b7d5c2c55f0485ff5
+  custom:scripting/monoscript/fileName/ScreenFader.cs: fc03e10c61a24d3d1916b7f5183a02f9 -> 
   custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:scripting/monoscript/fileName/OcclusionExample.cs: c78216723b14d2e19ea02c64237db868 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SceneCompletionEditor.cs: 2b7ddb6902950e292355670ee4921949 -> 
+  custom:scripting/monoscript/fileName/meshCreationStructure.cs: ff8f85051d979c6776a41f7d5071753d -> 
+  custom:scripting/monoscript/fileName/PinchGesture.cs: 7d5e173b279a221862e98effbe7c787e -> bd87c2706e999d6273c69ae4b74bfadc
+  custom:scripting/monoscript/fileName/UIToggleButton.cs: 5095e016af486f645413da1a642e1426 -> 
+  custom:scripting/monoscript/fileName/UserCalibrationExample.cs: 7293b40631adefa9cfce57b2bd84b42e -> 
+  custom:scripting/monoscript/fileName/UserInterface.cs: c404b84a87fab6b92cbf30ec1ddf2354 -> 
+  custom:scripting/monoscript/fileName/MagicLeapController.cs: b84ecc637ed78b26e7b1569b5f959ddb -> 
+  custom:scripting/monoscript/fileName/PlanePrefabExample.cs: 128ce1a6ebbac3de45205237b1ae67f9 -> 
+  custom:scripting/monoscript/fileName/ReadmeEditor.cs: ff7ced1e41c1b99ddf5dfefc88f6bd50 -> 
+  custom:scripting/monoscript/fileName/TimingRecording.cs: d1633f7db470aa856cc6faeaf802ef1f -> 
+  custom:scripting/monoscript/fileName/MeshingExample.cs: 7224f15a0afdd45fbee0549b127fcb6b -> 
+  custom:scripting/monoscript/fileName/MeshingTest.cs: f5d5d2d3959ba5dd29161a083d035c27 -> 
+  custom:scripting/monoscript/fileName/DefaultSetup.cs: 8d9c18438cc45ed006f7eb917f9eaae8 -> 
+  custom:scripting/monoscript/fileName/PlaneExample.cs: 74abc8c330aaa416622d3a94bb5c798c -> 
+  custom:scripting/monoscript/fileName/PlaceFromCamera.cs: 9ebff91b7bcaa680ce9cad2d11109a66 -> 
+  custom:scripting/monoscript/fileName/Trapdoor.cs: 51980f03d8077eeba96ca7fbec7c22ca -> 
+  custom:scripting/monoscript/fileName/GlobalDimmerExample.cs: 39dd0fc1ce726460c8763e5ed16342ad -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/PuzzleLayout.cs: be44c23be7812449ad886580c915da95 -> 
+  custom:scripting/monoscript/fileName/Flipper.cs: 4c0655494345e90092c44b5d7404175b -> 
+  custom:scripting/monoscript/fileName/MarkerTrackingExample.cs: 7948a61d87c3d7f61665011ebfb69c65 -> 
+  custom:scripting/monoscript/fileName/MeshingProjectile.cs: 86f7d4d3fc7b98dfb61141d40b8b94d2 -> 
+  custom:scripting/monoscript/fileName/PuzzlePiece.cs: 55403e72cccfcae6d0e5e7e4a0258b85 -> 
+  custom:scripting/monoscript/fileName/MeshGeneration.cs: fd440c5f12452a3d6483a09e3a6e2c57 -> 
+  custom:scripting/monoscript/fileName/MeshTexturedWireframeAdapter.cs: 0c637dab126db5f63e7fbed79d0717f9 -> 
+  custom:scripting/monoscript/fileName/SceneMenuEditor.cs: 71b77c650187872fd55b68f60068eaee -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1435.875136 seconds.
+  Time since last request: 80.659789 seconds.
   path: Assets/Prefabs/WideToSmall.prefab
   artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'd23dc312ad356ffc48b178eba54c2429') in 0.002268 seconds
+ -> (artifact id: '1eb6ee8a6166e7a5e989eda31a026f53') in 0.002114 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 5.357857 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ee04a8e5adf8326e3d4b9edf5fd0318a') in 0.000671 seconds
+  Time since last request: 113.748024 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000630 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.741915 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ee04a8e5adf8326e3d4b9edf5fd0318a') in 0.000722 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 84.853470 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0021695080dfa5a66eabb20245dc9ab5') in 0.000525 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 348.110901 seconds.
+  Time since last request: 0.142039 seconds.
   path: Assets/Prefabs/Seesaw.prefab
   artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8948e5cb07f9e38893f726efff45cab5') in 0.000705 seconds
+ -> (artifact id: '3c4a41b5c4dc492ffa45ae7c75f1dd8d') in 0.000759 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0021695080dfa5a66eabb20245dc9ab5') in 0.000776 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.516327 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0021695080dfa5a66eabb20245dc9ab5') in 0.000675 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.305791 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8948e5cb07f9e38893f726efff45cab5') in 0.000618 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2448.102303 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9609aa0089a3ccabf130f7664390a7d4') in 0.000959 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0021695080dfa5a66eabb20245dc9ab5') in 0.000780 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.645837 seconds.
-  path: Assets/Prefabs/Funnel.prefab
-  artifactKey: Guid(95ea0c742e4c3b8408e44d32bc9c6ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Funnel.prefab using Guid(95ea0c742e4c3b8408e44d32bc9c6ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3cfdb4e7abb1dbcd932383ff421a3a70') in 0.000610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9609aa0089a3ccabf130f7664390a7d4') in 0.000967 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0021695080dfa5a66eabb20245dc9ab5') in 0.000681 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.090868 seconds.
-  path: Assets/Prefabs/Funnel.prefab
-  artifactKey: Guid(95ea0c742e4c3b8408e44d32bc9c6ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Funnel.prefab using Guid(95ea0c742e4c3b8408e44d32bc9c6ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3cfdb4e7abb1dbcd932383ff421a3a70') in 0.000598 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '675f8cb53e35b1be5a8c90ec142d89e0') in 0.000843 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
+  Time since last request: 0.000020 seconds.
   path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '2082690dea6e95136512b31d0c5e4e6e') in 0.239791 seconds
+ -> (artifact id: '704b9237b2035511d4240810d09a33a1') in 0.252536 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 31
 ========================================================================
 Received Import Request.
-  Time since last request: 21.919991 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '675f8cb53e35b1be5a8c90ec142d89e0') in 0.000841 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
+  Time since last request: 3.582529 seconds.
   path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7f4b2c5884fb98247d0b2ba83d235846') in 0.010766 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 6.766006 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '675f8cb53e35b1be5a8c90ec142d89e0') in 0.000809 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4ae0798835802bcafee2cbe7ed0d68e1') in 0.011497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 18.757019 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '675f8cb53e35b1be5a8c90ec142d89e0') in 0.000623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ba48316c41d7ecc3cc4f67db73df444e') in 0.000883 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.591858 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '675f8cb53e35b1be5a8c90ec142d89e0') in 0.000600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0021695080dfa5a66eabb20245dc9ab5') in 0.000686 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 16.617079 seconds.
-  path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1d5c79bca0c70113738cfb48066e22ba') in 0.000979 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.638923 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000695 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '0021695080dfa5a66eabb20245dc9ab5') in 0.000537 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.123225 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000560 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.127082 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000626 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.329974 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000781 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.019694 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000606 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.777420 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.421199 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000520 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.275874 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4ccd44f4158bf9770d8e561b64501146') in 0.000910 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 35.377634 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4ccd44f4158bf9770d8e561b64501146') in 0.000739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.396771 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000753 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4ccd44f4158bf9770d8e561b64501146') in 0.000735 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.445543 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4ccd44f4158bf9770d8e561b64501146') in 0.000696 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 28.019872 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4ccd44f4158bf9770d8e561b64501146') in 0.000715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.193781 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000789 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4ccd44f4158bf9770d8e561b64501146') in 0.000810 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.605348 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000844 seconds
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'd003cc10a66c5329d69f4ab71b5f9f4b') in 0.000597 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.942986 seconds.
   path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '17579fe4c3cd248e47fb5ef7986735c4') in 0.000714 seconds
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a2b26a2b0f682854e5f44bb2a45bb1da') in 0.000604 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 10.038495 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000592 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000704 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
+  Time since last request: 3.417718 seconds.
   path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '9ffcf1acbcc878d661a24915ec043465') in 0.000828 seconds
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2ff4f7c1befeda8f6e526c865a87c8c0') in 0.000622 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 15.539140 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.001225 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.599225 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000676 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
+  Time since last request: 0.000033 seconds.
   path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dddf8fede30b08358493b24462acc16c') in 0.000861 seconds
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000703 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 35.527658 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000718 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dddf8fede30b08358493b24462acc16c') in 0.000893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.128641 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000570 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dddf8fede30b08358493b24462acc16c') in 0.000685 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.430792 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000986 seconds
+  Time since last request: 13.257066 seconds.
+  path: Assets/Prefabs/Shape.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '20c82820806f7f90b01ca39835fc6afa') in 0.000910 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000030 seconds.
   path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dddf8fede30b08358493b24462acc16c') in 0.000705 seconds
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000618 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 8.603184 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000534 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 31.950005 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000779 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 12.409523 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000665 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 34.149302 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000608 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
+  Time since last request: 23.446730 seconds.
   path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '10cb498884901042d2b9b94dfd3de0c6') in 0.013637 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 6.855335 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000781 seconds
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '290e88af8024cd7744dcfb40ae594f45') in 0.000759 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
+  Time since last request: 16.646781 seconds.
   path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '5c84873a32b2702b36f97aae75583fbc') in 0.010369 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 5.597259 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000660 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'b839f255ecd74846e4e70c85a1302cde') in 0.013288 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 6.182372 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7fb1d75ebab2e9c5753025f930acfcb9') in 0.013113 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 14.466314 seconds.
-  path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dddf8fede30b08358493b24462acc16c') in 0.001341 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.587149 seconds.
-  path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dddf8fede30b08358493b24462acc16c') in 0.000727 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.268365 seconds.
-  path: Assets/Prefabs/Shape.prefab
-  artifactKey: Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shape.prefab using Guid(bd25d31f2e7a3f145a30555bebf3e13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '34be14fa2e4064003e6f59731f560e6a') in 0.000728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.944619 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000837 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.896522 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000636 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.172994 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000649 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 27.694945 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '4c54675c267218daf3fcbad4a575186b') in 0.000600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 17.480966 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '453d592f5745fb765adb33a6e6c3c0a1') in 0.000783 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.378220 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ebdb62d9e836a3c06041e24a510c3036') in 0.000487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.411152 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ac40472c6b3b9b40b3955251d7c30feb') in 0.000584 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.859323 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ac40472c6b3b9b40b3955251d7c30feb') in 0.000891 seconds
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5d927039dba4661a30985d207a60cd48') in 0.000596 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
   path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'dddf8fede30b08358493b24462acc16c') in 0.000649 seconds
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000851 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 4.996202 seconds.
+  Time since last request: 5.143929 seconds.
+  path: Assets/Prefabs/Shape.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shape.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1be0b07d980eeb1dc99caa811f4a0889') in 0.000502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.132834 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.329721 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.810337 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.126375 seconds.
   path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ac40472c6b3b9b40b3955251d7c30feb') in 0.000637 seconds
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.553644 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000607 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Prefabs/Store.prefab
-  artifactKey: Guid(d50f87de7933ae947b15bf49ca395703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Store.prefab using Guid(d50f87de7933ae947b15bf49ca395703) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '717a09237c231e7d12e6ce21f24f998f') in 0.000789 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.173685 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ac40472c6b3b9b40b3955251d7c30feb') in 0.000528 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
   path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7e07f25412aa316f93d20aa88f583434') in 0.000541 seconds
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000604 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.591648 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ac40472c6b3b9b40b3955251d7c30feb') in 0.000611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
+  Time since last request: 4.606916 seconds.
   path: Assets/Prefabs/WideSmall.prefab
-  artifactKey: Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideSmall.prefab using Guid(4d24c8a7c2de3be46b0d1c51710823df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '3c442d9b5b0bb17f6eb357797751d283') in 0.000842 seconds
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000805 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 7.766406 seconds.
+  Time since last request: 6.587974 seconds.
   path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(695292e5c0d7e824a8810e984c07dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ac40472c6b3b9b40b3955251d7c30feb') in 0.000608 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Prefabs/Store.prefab
-  artifactKey: Guid(d50f87de7933ae947b15bf49ca395703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Store.prefab using Guid(d50f87de7933ae947b15bf49ca395703) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '717a09237c231e7d12e6ce21f24f998f') in 0.000671 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.594 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.699 seconds
-Domain Reload Profiling: 2289ms
-	BeginReloadAssembly (167ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (358ms)
-		LoadAssemblies (349ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (75ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (42ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1699ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (845ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (117ms)
-			ProcessInitializeOnLoadAttributes (553ms)
-			ProcessInitializeOnLoadMethodAttributes (152ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 16.81 ms, found 21 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 135 unused Assets / (4.0 MB). Loaded Objects now: 9781.
-Memory consumption went from 303.7 MB to 299.7 MB.
-Total: 6.963900 ms (FindLiveObjects: 0.726600 ms CreateObjectMapping: 0.332400 ms MarkObjects: 4.202300 ms  DeleteObjects: 1.701300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.469 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.703 seconds
-Domain Reload Profiling: 2168ms
-	BeginReloadAssembly (154ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (248ms)
-		LoadAssemblies (290ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (26ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1703ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (855ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (16ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (103ms)
-			ProcessInitializeOnLoadAttributes (568ms)
-			ProcessInitializeOnLoadMethodAttributes (158ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 19.64 ms, found 21 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 135 unused Assets / (3.9 MB). Loaded Objects now: 9800.
-Memory consumption went from 304.6 MB to 300.7 MB.
-Total: 9.211600 ms (FindLiveObjects: 1.253800 ms CreateObjectMapping: 0.455200 ms MarkObjects: 5.673600 ms  DeleteObjects: 1.827900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.697 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.386 seconds
-Domain Reload Profiling: 3076ms
-	BeginReloadAssembly (197ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (394ms)
-		LoadAssemblies (381ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (52ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (2387ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1299ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (139ms)
-			ProcessInitializeOnLoadAttributes (886ms)
-			ProcessInitializeOnLoadMethodAttributes (238ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 30.25 ms, found 21 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 135 unused Assets / (3.9 MB). Loaded Objects now: 9819.
-Memory consumption went from 305.7 MB to 301.8 MB.
-Total: 13.335700 ms (FindLiveObjects: 1.197500 ms CreateObjectMapping: 0.462000 ms MarkObjects: 7.993200 ms  DeleteObjects: 3.679400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.502 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.623 seconds
-Domain Reload Profiling: 2121ms
-	BeginReloadAssembly (151ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (288ms)
-		LoadAssemblies (277ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (74ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (41ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1623ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (859ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (104ms)
-			ProcessInitializeOnLoadAttributes (567ms)
-			ProcessInitializeOnLoadMethodAttributes (165ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 22.88 ms, found 21 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 135 unused Assets / (4.0 MB). Loaded Objects now: 9838.
-Memory consumption went from 306.9 MB to 302.9 MB.
-Total: 10.337500 ms (FindLiveObjects: 0.992600 ms CreateObjectMapping: 0.831700 ms MarkObjects: 5.975800 ms  DeleteObjects: 2.536300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.544 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.664 seconds
-Domain Reload Profiling: 2204ms
-	BeginReloadAssembly (160ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (319ms)
-		LoadAssemblies (310ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (75ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (42ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1664ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (878ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (103ms)
-			ProcessInitializeOnLoadAttributes (586ms)
-			ProcessInitializeOnLoadMethodAttributes (166ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 23.01 ms, found 21 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8914 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 135 unused Assets / (3.9 MB). Loaded Objects now: 9857.
-Memory consumption went from 307.9 MB to 304.0 MB.
-Total: 10.913000 ms (FindLiveObjects: 0.948900 ms CreateObjectMapping: 0.641300 ms MarkObjects: 6.474900 ms  DeleteObjects: 2.845700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2149.413003 seconds.
-  path: Assets/Prefabs/Seesaw.prefab
-  artifactKey: Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Seesaw.prefab using Guid(2a77e62e6402edc48969a471a2b5fd27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '71214a3bbd1c97bf8f84d74db2b153a0') in 0.001917 seconds
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000914 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000034 seconds.
-  path: Assets/Prefabs/WideToSmall.prefab
-  artifactKey: Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/WideToSmall.prefab using Guid(2b9419d426dc92846bdb6a0a5a7eeff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '988da69cd5104728538bf1316bbc92d3') in 0.000686 seconds
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 23.787173 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.978069 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.601312 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.883545 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.927402 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.043852 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.039743 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.561482 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.615562 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.122939 seconds.
+  path: Assets/Prefabs/Seesaw.prefab
+  artifactKey: Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Seesaw.prefab using Guid(ebd824613552eb344870e1cf90a32e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '008c375518af9c469bfa5ea4e00ca1cf') in 0.000593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/WideSmall.prefab
+  artifactKey: Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WideSmall.prefab using Guid(353b9550d91ef2f419d8bd867faea655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8c950644ca12917d2e6ac5401bac76ef') in 0.000680 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
