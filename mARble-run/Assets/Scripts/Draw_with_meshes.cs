@@ -3,6 +3,7 @@ using UnityEngine.XR;
 using System.Collections.Generic;
 using UnityEngine.Splines;
 using Unity.Mathematics;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 namespace MagicLeap.Examples{
 public class VRPathDrawer : MonoBehaviour
@@ -51,10 +52,13 @@ public class VRPathDrawer : MonoBehaviour
     void Start()
     {
         mesh = new Mesh();
-        meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(MeshCollider));
+        meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(MeshCollider), typeof(Rigidbody), typeof(IXRInteractable));
         meshObject.GetComponent<MeshFilter>().mesh = mesh;
         meshObject.GetComponent<MeshRenderer>().material = mat;
         meshObject.GetComponent<MeshCollider>().sharedMesh = mesh;
+        Rigidbody rb = meshObject.GetComponent<Rigidbody>();
+        rb.useGravity = false;
+        rb.isKinematic = true;
 
 
         controller = MagicLeapController.Instance;
@@ -161,10 +165,10 @@ public class VRPathDrawer : MonoBehaviour
 
     void ConnectEndpoints()
     {
-        /*bool[] start_isconnected = new bool[spline_startpoint_indices.Count];
+        bool[] start_isconnected = new bool[spline_startpoint_indices.Count];
         bool[] end_isconnected = new bool[spline_endpoint_indices.Count];
 
-        for (int s = 0; s < spline_startpoint_indices.Count; s++)
+        /*for (int s = 0; s < spline_startpoint_indices.Count; s++)
         {
             float dist = float.MaxValue;
             int start_connection_index = s;
@@ -191,7 +195,7 @@ public class VRPathDrawer : MonoBehaviour
             }
 
         }
-
+        */
         for (int i = 0; i < start_isconnected.Length; i++)
         {
             if (!start_isconnected[i])
@@ -205,7 +209,7 @@ public class VRPathDrawer : MonoBehaviour
             {
                 FillFaces_stops_end(spline_endpoint_indices[i]);
             }
-        }*/
+        }
 
     }
 
@@ -214,8 +218,8 @@ public class VRPathDrawer : MonoBehaviour
     {
 
         List<Vector3> curr_vertice_segment = new List<Vector3>();
-        float percentage = 0.2f;
-        for (float t = 0f; t <= 1; t += percentage)
+        float percentage = 0.1999999f;
+        for (float t = 0.000000001f; t < 1; t += percentage)
         {
 
             if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
