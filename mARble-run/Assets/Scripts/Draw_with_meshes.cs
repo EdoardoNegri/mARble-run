@@ -3,6 +3,10 @@ using UnityEngine.XR;
 using System.Collections.Generic;
 using UnityEngine.Splines;
 using Unity.Mathematics;
+using UnityEngine.UI;
+using UnityEngine.XR.OpenXR;
+using UnityEngine.XR.OpenXR.NativeTypes;
+using MagicLeap.OpenXR.Features;
 
 namespace MagicLeap.Examples{
 public class VRPathDrawer : MonoBehaviour
@@ -48,6 +52,8 @@ public class VRPathDrawer : MonoBehaviour
     //distance of vertices generated from the spline
     private float width = 0.05f;
 
+    private MagicLeapRenderingExtensionsFeature rendering;
+
     void Start()
     {
         mesh = new Mesh();
@@ -58,6 +64,9 @@ public class VRPathDrawer : MonoBehaviour
 
 
         controller = MagicLeapController.Instance;
+
+        rendering = OpenXRSettings.Instance.GetFeature<MagicLeapRenderingExtensionsFeature>();
+        rendering.BlendMode = XrEnvironmentBlendMode.Additive;
     }
 
     void Update()
