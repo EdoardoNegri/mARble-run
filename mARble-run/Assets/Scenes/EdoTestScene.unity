@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968053edfd89749c48f4ea5d444abf64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MeshPrefab: {fileID: 96118017305851066, guid: d41b582e743144b378c3d34eb8c078aa,
+  m_MeshPrefab: {fileID: 96118017305851066, guid: 325f6e6feaccd47449b3c7e810321b91,
     type: 3}
   m_Density: 1
   m_Normals: 1
@@ -518,12 +518,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &2026913735 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 976344256084315281, guid: d50f87de7933ae947b15bf49ca395703,
-    type: 3}
-  m_PrefabInstance: {fileID: 7571872385936361526}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7571872385936361526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -638,12 +632,12 @@ PrefabInstance:
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
@@ -653,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
@@ -678,7 +672,7 @@ PrefabInstance:
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6823161470972759277, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
@@ -697,15 +691,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 976344256084315281, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7571872385936361532}
+      addedObject: {fileID: 7571872385936361528}
   m_SourcePrefab: {fileID: 100100000, guid: d50f87de7933ae947b15bf49ca395703, type: 3}
---- !u!114 &7571872385936361532
+--- !u!1 &7571872385936361527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 976344256084315281, guid: d50f87de7933ae947b15bf49ca395703,
+    type: 3}
+  m_PrefabInstance: {fileID: 7571872385936361526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7571872385936361528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026913735}
+  m_GameObject: {fileID: 7571872385936361527}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea05a203896b48146ab21000fc478d4b, type: 3}
@@ -717,8 +717,8 @@ MonoBehaviour:
   _positionSmoothTime: 5
   _rotationSmoothTime: 5
   _lookDirection: 2
-  _placeOnAwake: 0
-  _placeOnUpdate: 0
+  _placeOnAwake: 1
+  _placeOnUpdate: 1
   _lockZRotation: 0
   _lockXRotation: 0
   _lockToXZPlane: 0
