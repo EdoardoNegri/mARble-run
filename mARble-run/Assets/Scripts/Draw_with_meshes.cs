@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.Splines;
 using Unity.Mathematics;
 
+namespace MagicLeap.Examples{
 public class VRPathDrawer : MonoBehaviour
 {
     public XRNode controllerNode = XRNode.RightHand; // Choose which controller to use
@@ -35,6 +36,8 @@ public class VRPathDrawer : MonoBehaviour
     private List<Vector3> spline_startpoint_points = new List<Vector3>();
     private List<Vector3> spline_endpoint_points = new List<Vector3>();
 
+    private MagicLeapController controller;
+
     //holds the mesh elements
     private List<List<Vector3>> vertice_segments = new List<List<Vector3>>();
     private List<int> tris = new List<int>();
@@ -51,15 +54,16 @@ public class VRPathDrawer : MonoBehaviour
         meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter));
         meshObject.GetComponent<MeshFilter>().mesh = mesh;
         meshObject.GetComponent<MeshRenderer>().material = mat;
+
+        controller = MagicLeapController.Instance;
     }
 
     void Update()
     {
-        InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
-        bool triggerValue;
-
-        if (device.TryGetFeatureValue(CommonUsages.triggerButton, out triggerValue))
+        if (controller.IsTracked)
         {
+            bool triggerValue = (controller.TriggerValue > 0.2f);
+
             if (triggerValue && !isDrawing)
             {
                 StartDrawing();
@@ -77,17 +81,20 @@ public class VRPathDrawer : MonoBehaviour
 
     void StartDrawing()
     {
-        spline.Clear();
+        spline = new Spline();
         isDrawing = true;
-        currStartPoint = transform.position;
+        currStartPoint = controller.Position;
         lastPoint = currStartPoint;
+        Debug.Log($"Start Position: {currStartPoint}");
+
         //create connector
     }
 
     void ContinueDrawing()
     {
         //maybe add an indicator of where you are drawing
-        Vector3 currentPoint = transform.position;
+        Vector3 currentPoint = controller.Position;
+        Debug.Log($"Position: {currentPoint}");
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
             spline.Add(new BezierKnot(currentPoint));
@@ -102,9 +109,7 @@ public class VRPathDrawer : MonoBehaviour
 
         //Create a mesh along for this spline (All vertices are created here)
         addVerticeSegment();
-        
-       
-
+        spline.Clear();
     }
 
     void eraseSegment(Vector3 position)
@@ -351,4 +356,5 @@ public class VRPathDrawer : MonoBehaviour
         tris.Add(offset + 5);
 
     }
+}
 }

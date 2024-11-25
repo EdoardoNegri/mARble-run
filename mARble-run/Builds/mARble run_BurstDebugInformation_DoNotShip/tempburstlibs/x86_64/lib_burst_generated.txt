@@ -11,6 +11,7 @@ Library: /Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/
 --float-mode=Fast
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/Burst
+--debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/2022.3.48f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Library/Burst
 --output=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/BurstOutput/tempburstlibs/x86_64/lib_burst_generated
@@ -28,6 +29,7 @@ Library: /Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/Burst
+--debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/2022.3.48f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Library/Burst
 --output=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/BurstOutput/tempburstlibs/x86_64/lib_burst_generated
@@ -61,6 +63,7 @@ Library: /Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/Burst
+--debug=Full
 --key-folder=/Applications/Unity/Hub/Editor/2022.3.48f1/PlaybackEngines/AndroidPlayer
 --decode-folder=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Library/Burst
 --output=/Users/soroush/LDocuments/University/MSc/Term 3/MR/projects/mARble-run/mARble-run/Temp/BurstOutput/tempburstlibs/x86_64/lib_burst_generated
