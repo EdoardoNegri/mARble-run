@@ -51,9 +51,11 @@ public class VRPathDrawer : MonoBehaviour
     void Start()
     {
         mesh = new Mesh();
-        meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter));
+        meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(MeshCollider));
         meshObject.GetComponent<MeshFilter>().mesh = mesh;
         meshObject.GetComponent<MeshRenderer>().material = mat;
+        meshObject.GetComponent<MeshCollider>().sharedMesh = mesh;
+
 
         controller = MagicLeapController.Instance;
     }
@@ -116,14 +118,14 @@ public class VRPathDrawer : MonoBehaviour
 
         //Create a mesh along for this spline (All vertices are created here)
         addVerticeSegment();
-        foreach (var item in vertice_segments[vertice_segments.Count - 1])
+        /*foreach (var item in vertice_segments[vertice_segments.Count - 1])
         {   
             Debug.Log($"vertice Position: {item}");
         }
         foreach (var item in spline)
         {
             Debug.Log($"Spline Position: {item}");
-        }
+        }*/
         spline.Clear();
     }
 
@@ -159,7 +161,7 @@ public class VRPathDrawer : MonoBehaviour
 
     void ConnectEndpoints()
     {
-        bool[] start_isconnected = new bool[spline_startpoint_indices.Count];
+        /*bool[] start_isconnected = new bool[spline_startpoint_indices.Count];
         bool[] end_isconnected = new bool[spline_endpoint_indices.Count];
 
         for (int s = 0; s < spline_startpoint_indices.Count; s++)
@@ -203,7 +205,7 @@ public class VRPathDrawer : MonoBehaviour
             {
                 FillFaces_stops_end(spline_endpoint_indices[i]);
             }
-        }
+        }*/
 
     }
 
@@ -271,7 +273,8 @@ public class VRPathDrawer : MonoBehaviour
         ConnectEndpoints();
         mesh.SetVertices(vertices.ToArray());
         mesh.SetTriangles(tris.ToArray(), 0);
-    }
+        mesh.RecalculateBounds();
+     }
 
 
     //go around a spline and connect subsequent points)
