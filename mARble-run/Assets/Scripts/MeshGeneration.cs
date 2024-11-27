@@ -16,18 +16,8 @@ public class MeshGeneration : MonoBehaviour
     int steps_per_spline = 10;
     List<Mesh> meshes = new List<Mesh>();
 
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void buildTrack(List<Spline> newsegments)
+    public void buildTrack(List<Spline> newsegments)
     {
         
 

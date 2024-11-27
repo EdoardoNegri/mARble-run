@@ -24,12 +24,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136334132083894013}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalRotation: {x: -0, y: 0.9396927, z: -0, w: -0.3420201}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5601639689016090933}
+  m_Father: {fileID: 2633749173269125066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &334636515818315993
 GameObject:
@@ -60,6 +60,8 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4524481523032795954}
+  - {fileID: 6815516450654534929}
   - {fileID: 5601639689016090933}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96,9 +98,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4524481523032795954}
-  - {fileID: 6815516450654534929}
+  m_Children: []
   m_Father: {fileID: 2633749173269125066}
   m_LocalEulerAnglesHint: {x: 0, y: 220, z: 0}
 --- !u!33 &5601639689016090932
@@ -247,10 +247,36 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8799399107224669219, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
+          type: 3}
+        m_TargetAssemblyTypeName: Connect, Assembly-CSharp
+        m_MethodName: DisconnectPoints
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 334636515818315993}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8799399107224669219, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
+          type: 3}
+        m_TargetAssemblyTypeName: Connect, Assembly-CSharp
+        m_MethodName: ConnectPoints
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 334636515818315993}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -358,10 +384,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6371680398103073279}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.258, y: 0.068, z: 0}
+  m_LocalRotation: {x: -0, y: 0.9396927, z: -0, w: -0.3420201}
+  m_LocalPosition: {x: -0.19763955, y: -0.732, z: 0.16583923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5601639689016090933}
+  m_Father: {fileID: 2633749173269125066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
