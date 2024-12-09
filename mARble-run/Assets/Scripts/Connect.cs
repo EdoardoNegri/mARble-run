@@ -11,7 +11,9 @@ public class Connect : MonoBehaviour
     public const float max_distance = 1.0f;
     //<Connector1, Connector2, Connecting Mesh
     private List<Tuple<GameObject, GameObject, GameObject>> PairedConnectors = new List<Tuple<GameObject, GameObject, GameObject>>();
-    
+    //private List<Tuple<GameObject, GameObject>> PairedConnectors = new List<Tuple<GameObject, GameObject>>();
+
+
     public void ConnectPoints(GameObject obj)
     {
         // Find objects with tag "Connector" in the parent object
@@ -42,6 +44,7 @@ public class Connect : MonoBehaviour
 
                     // Remember to reactivate the connector
                     PairedConnectors.Add(new Tuple<GameObject, GameObject, GameObject>(NewConnector, Connector, meshObject));
+                    //PairedConnectors.Add(new Tuple<GameObject, GameObject>(NewConnector, Connector));
                     NewConnector.SetActive(false);
                     Connector.SetActive(false);
                     break;
@@ -61,8 +64,9 @@ public class Connect : MonoBehaviour
 
         foreach (GameObject NewConnector in NewConnectors)
         {
-            foreach (Tuple<GameObject, GameObject, GameObject> Pair in PairedConnectors)
-            {
+                foreach (Tuple<GameObject, GameObject, GameObject> Pair in PairedConnectors)
+                //foreach (Tuple<GameObject, GameObject> Pair in PairedConnectors)
+                {
                 if (NewConnector == Pair.Item1 || NewConnector == Pair.Item2)
                 {
                     Pair.Item1.SetActive(true);
