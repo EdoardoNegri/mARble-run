@@ -1,24 +1,28 @@
 using UnityEngine;
 using MagicLeap.OpenXR.Features;
+using System.Collections;
 
-namespace MagicLeap.Examples{
-//this needs to be attached to the object you want to delete
+namespace MagicLeap.Examples
+    {
     public class Eraser : MonoBehaviour
     {
-        private bool isInteracting = false; // Tracks if the object is currently interactable
         private MagicLeapController controller;
         void Start()
         {
-            // Register the object as interactable
             controller = MagicLeapController.Instance;
         }
-        void Update()
+        public IEnumerator canErase()
         {
-            // Check for button press while the object is interactable
-            if (isInteracting)
+            while (true)
             {
-                isInteracting = false;
-                Destroy(gameObject);
+                // Continuously check for bumper press
+                if (controller.BumperIsPressed)
+                {
+                    Destroy(gameObject);
+                    yield break; // Exit the coroutine after destruction
+                }
+                // Wait for the next frame
+                yield return null;
             }
         }
     }
