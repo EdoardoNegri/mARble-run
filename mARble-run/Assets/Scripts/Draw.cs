@@ -12,18 +12,21 @@ using System.Linq;
 using Unity.VisualScripting;
 using System;
 
-namespace MagicLeap.Examples{
-public class Draw : MonoBehaviour
+namespace MagicLeap.Examples
 {
-    public const float minDistance = 0.1f; // Minimum distance between points and construction points
-    public Material mat;
+    public class Draw : MonoBehaviour
+    {
+        public const float minDistance = 0.1f; // Minimum distance between points and construction points
+        public Material mat;
 
-    //const values for mesh generation
-    private const int numVertsPerPoint = 9;
-    private const float width = 0.05f;
+        //const values for mesh generation
+        private const int numVertsPerPoint = 9;
+        private const float width = 0.05f;
+        private float spline_total_length = 0.0f;
+        private const float spline_step_size = width;
 
-    private Spline spline = new Spline();
-    private MagicLeapController controller;
+        private Spline spline = new Spline();
+        private MagicLeapController controller;
 
     private bool isDrawing = false;
     private Vector3 currStartPoint;
@@ -42,11 +45,11 @@ public class Draw : MonoBehaviour
         rendering.BlendMode = XrEnvironmentBlendMode.Additive;
     }
 
-    void Update()
-    {
-        if (controller.IsTracked)
+        void Update()
         {
-            bool bumperValue = controller.BumperIsPressed;
+            if (controller.IsTracked)
+            {
+                bool bumperValue = controller.BumperIsPressed;
 
             if (bumperValue && !isDrawing)
                 StartDrawing();
@@ -73,59 +76,64 @@ public class Draw : MonoBehaviour
         sphere.transform.SetParent(sphereParent.transform);
     }
 
-    void ContinueDrawing()
-    {
-        //maybe add an indicator of where you are drawing
-        Vector3 currentPoint = controller.Position;
-        if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
+        void ContinueDrawing()
         {
-            spline.Add(new BezierKnot(currentPoint));
-            Instantiate(sphere, currentPoint, Quaternion.identity, sphereParent.transform);
-            lastPoint = currentPoint;
+            //maybe add an indicator of where you are drawing
+            Vector3 currentPoint = controller.Position;
+            if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
+            {
+                spline_total_length += Vector3.Distance(currentPoint, lastPoint);
+
+                spline.Add(new BezierKnot(currentPoint));
+                Instantiate(sphere, currentPoint, Quaternion.identity, sphereParent.transform);
+                lastPoint = currentPoint;
+            }
         }
-    }
 
-    void StopDrawing()
-    {
-        isDrawing = false;
-        Destroy(sphereParent);
-        //Create a mesh along for this spline (All vertices are created here)
-        addMeshSegment();
-        spline.Clear();
-    }
+        void StopDrawing()
+        {
+            isDrawing = false;
+            Destroy(sphereParent);
+            //Create a mesh along for this spline (All vertices are created here)
+            addMeshSegment();
+            spline.Clear();
+            spline_total_length = 0.0f;
+        }
 
-    public void addMeshSegment()
-    {
-        if (spline.Knots.Count() < 2)
+        public void addMeshSegment()
+        {
+            if (spline.Knots.Count() < 2)
                 return;
 
-        List<Vector3> curr_vertice_segment = new List<Vector3>();
-        List<int> curr_tris = new List<int>();
-        float percentage = 0.05f;
-        for (float t = 0f; t <= 1; t += percentage)
-        {
-
-            if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
+            List<Vector3> curr_vertice_segment = new List<Vector3>();
+            List<int> curr_tris = new List<int>();
+            float percentage = (spline_total_length / spline_step_size);
+            for (float t = 0f; t <= 1; t += percentage)
             {
-                Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
-                Vector3 up = new Vector3(0f, 1f, 0f);
-                Vector3 right = Vector3.Cross(forward, up).normalized;
-                Vector3 left = -right;
-                Vector3 down = -up;
 
-                //the (((Vector3)upVector)*width) is just there to move all points up a bit without redoing everything
-                /*curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
+                if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
+                {
+                    Vector3 tang = ((Vector3)tangent).normalized;
 
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
+                    Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
+                    Vector3 up = ((Vector3) upVector).normalized;
+                    Vector3 right = Vector3.Cross(forward, up).normalized;
+                    Vector3 left = -right;
+                    Vector3 down = -up;
 
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
-                */
+                    //the (((Vector3)upVector)*width) is just there to move all points up a bit without redoing everything
+                    /*curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
+
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
+
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
+                    */
                     curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width * 1.2f));
                     curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width));
                     curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((right + down).normalized * width));
@@ -140,7 +148,7 @@ public class Draw : MonoBehaviour
 
 
                 }
-        }
+            }
             FillFaces_along_spline(curr_vertice_segment, curr_tris);
             GameObject meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(Rigidbody), typeof(MeshCollider));
 
@@ -153,7 +161,7 @@ public class Draw : MonoBehaviour
             connector2.tag = "Connector";
             connector2.transform.position = lastPoint;
             connector2.transform.SetParent(meshObject.transform);
-            
+
             Mesh mesh = new Mesh();
 
 
@@ -169,7 +177,7 @@ public class Draw : MonoBehaviour
 
             this.GetComponent<Connect>().ConnectPoints(meshObject);
 
-    }
+        }
 
         public GameObject addConnectorSegment(GameObject connector1, GameObject connector2)
         {
@@ -224,105 +232,105 @@ public class Draw : MonoBehaviour
         }
 
 
-    //go around a spline and connect subsequent points)
-    void FillFaces_along_spline(List<Vector3> vertices, List<int> tris)
-    {
-        for (int i = 0; i < vertices.Count - numVertsPerPoint; i += numVertsPerPoint)
+        //go around a spline and connect subsequent points)
+        void FillFaces_along_spline(List<Vector3> vertices, List<int> tris)
         {
-            FillFaces_single_step(i, i + numVertsPerPoint, tris);
-        }
-        FillFaces_stops_start(0, tris);
-        FillFaces_stops_end(vertices.Count - numVertsPerPoint, tris);
+            for (int i = 0; i < vertices.Count - numVertsPerPoint; i += numVertsPerPoint)
+            {
+                FillFaces_single_step(i, i + numVertsPerPoint, tris);
+            }
+            FillFaces_stops_start(0, tris);
+            FillFaces_stops_end(vertices.Count - numVertsPerPoint, tris);
 
 
         }
 
-    //connect vertices of 2 points
-    void FillFaces_single_step(int offset1, int offset2, List<int> tris)
-    {
-        for (int i = 0; i < numVertsPerPoint - 1; i++)
+        //connect vertices of 2 points
+        void FillFaces_single_step(int offset1, int offset2, List<int> tris)
         {
-            tris.Add(offset1 + i);
-            tris.Add(offset2 + i);
-            tris.Add(offset1 + i + 1);
+            for (int i = 0; i < numVertsPerPoint - 1; i++)
+            {
+                tris.Add(offset1 + i);
+                tris.Add(offset2 + i);
+                tris.Add(offset1 + i + 1);
 
 
-            tris.Add(offset1 + i + 1);
-            tris.Add(offset2 + i);
-            tris.Add(offset2 + i + 1);
+                tris.Add(offset1 + i + 1);
+                tris.Add(offset2 + i);
+                tris.Add(offset2 + i + 1);
+            }
+
+            tris.Add(offset1 + numVertsPerPoint - 1);
+            tris.Add(offset2 + numVertsPerPoint - 1);
+            tris.Add(offset1);
+
+            tris.Add(offset2);
+            tris.Add(offset1);
+            tris.Add(offset2 + numVertsPerPoint - 1);
+
+
+        }
+        void FillFaces_stops_start(int offset, List<int> tris)
+        {
+            tris.Add(offset + 0);
+            tris.Add(offset + 1);
+            tris.Add(offset + 8);
+
+            tris.Add(offset + 1);
+            tris.Add(offset + 2);
+            tris.Add(offset + 8);
+
+            tris.Add(offset + 2);
+            tris.Add(offset + 3);
+            tris.Add(offset + 8);
+
+            tris.Add(offset + 3);
+            tris.Add(offset + 7);
+            tris.Add(offset + 8);
+
+            tris.Add(offset + 3);
+            tris.Add(offset + 4);
+            tris.Add(offset + 7);
+
+            tris.Add(offset + 4);
+            tris.Add(offset + 5);
+            tris.Add(offset + 7);
+
+            tris.Add(offset + 5);
+            tris.Add(offset + 6);
+            tris.Add(offset + 7);
         }
 
-        tris.Add(offset1 + numVertsPerPoint - 1);
-        tris.Add(offset2 + numVertsPerPoint - 1);
-        tris.Add(offset1);
+        void FillFaces_stops_end(int offset, List<int> tris)
+        {
+            tris.Add(offset + 8);
+            tris.Add(offset + 1);
+            tris.Add(offset + 0);
 
-        tris.Add(offset2);
-        tris.Add(offset1);
-        tris.Add(offset2 + numVertsPerPoint - 1);
+            tris.Add(offset + 8);
+            tris.Add(offset + 2);
+            tris.Add(offset + 1);
 
+            tris.Add(offset + 8);
+            tris.Add(offset + 3);
+            tris.Add(offset + 2);
 
+            tris.Add(offset + 8);
+            tris.Add(offset + 7);
+            tris.Add(offset + 3);
+
+            tris.Add(offset + 7);
+            tris.Add(offset + 4);
+            tris.Add(offset + 3);
+
+            tris.Add(offset + 7);
+            tris.Add(offset + 5);
+            tris.Add(offset + 4);
+
+            tris.Add(offset + 7);
+            tris.Add(offset + 6);
+            tris.Add(offset + 5);
+
+        }
     }
-    void FillFaces_stops_start(int offset, List<int> tris)
-    {
-        tris.Add(offset + 0);
-        tris.Add(offset + 1);
-        tris.Add(offset + 8);
-
-        tris.Add(offset + 1);
-        tris.Add(offset + 2);
-        tris.Add(offset + 8);
-
-        tris.Add(offset + 2);
-        tris.Add(offset + 3);
-        tris.Add(offset + 8);
-
-        tris.Add(offset + 3);
-        tris.Add(offset + 7);
-        tris.Add(offset + 8);
-
-        tris.Add(offset + 3);
-        tris.Add(offset + 4);
-        tris.Add(offset + 7);
-
-        tris.Add(offset + 4);
-        tris.Add(offset + 5);
-        tris.Add(offset + 7);
-
-        tris.Add(offset + 5);
-        tris.Add(offset + 6);
-        tris.Add(offset + 7);
-    }
-
-    void FillFaces_stops_end(int offset, List<int> tris)
-    {
-        tris.Add(offset + 8);
-        tris.Add(offset + 1);
-        tris.Add(offset + 0);
-
-        tris.Add(offset + 8);
-        tris.Add(offset + 2);
-        tris.Add(offset + 1);
-
-        tris.Add(offset + 8);
-        tris.Add(offset + 3);
-        tris.Add(offset + 2);
-
-        tris.Add(offset + 8);
-        tris.Add(offset + 7);
-        tris.Add(offset + 3);
-
-        tris.Add(offset + 7);
-        tris.Add(offset + 4);
-        tris.Add(offset + 3);
-
-        tris.Add(offset + 7);
-        tris.Add(offset + 5);
-        tris.Add(offset + 4);
-
-        tris.Add(offset + 7);
-        tris.Add(offset + 6);
-        tris.Add(offset + 5);
-
-    }
-}
 }
