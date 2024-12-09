@@ -35,16 +35,10 @@ public class Connect : MonoBehaviour
                 float distance = Vector3.Distance(NewConnector.transform.position, Connector.transform.position);
                 if (0 < distance && distance <= max_distance)
                 {
-                    // Initialize a new spline here
-                    Spline spline = new Spline();
-                    spline.Add(new BezierKnot(NewConnector.transform.position));
-                    spline.Add(new BezierKnot(Connector.transform.position));
-                    
-                    GameObject meshObject = this.GetComponent<Draw_with_mesh_revolution>().addConnectorSegment(NewConnector, Connector);
+                    GameObject meshObject = this.GetComponent<Draw>().addConnectorSegment(NewConnector, Connector);
 
                     // Remember to reactivate the connector
                     PairedConnectors.Add(new Tuple<GameObject, GameObject, GameObject>(NewConnector, Connector, meshObject));
-                    //PairedConnectors.Add(new Tuple<GameObject, GameObject>(NewConnector, Connector));
                     NewConnector.SetActive(false);
                     Connector.SetActive(false);
                     break;

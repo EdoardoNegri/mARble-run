@@ -8,7 +8,7 @@ using UnityEngine.XR.OpenXR;
 using MagicLeap.Android;
 using MagicLeap.OpenXR.Features.Meshing;
 
-public class MeshingTest : MonoBehaviour
+public class EnvironmentMesh : MonoBehaviour
 {
     [SerializeField]
     private ARMeshManager meshManager;
