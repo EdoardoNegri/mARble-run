@@ -249,7 +249,7 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
 
             if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
             {
-                Vector3 forward = (new Vector3(tangent.y, 0f, tangent.z)).normalized;
+                Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
                     Vector3 up = new Vector3(0f, 1f, 0f);
                 Vector3 right = Vector3.Cross(forward, up).normalized;
                 Vector3 left = -right;
