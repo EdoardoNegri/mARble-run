@@ -3,12 +3,16 @@ using UnityEngine.Splines;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MagicLeap.Examples;
 
 public class Connect : MonoBehaviour
 {
     // Start is called before the first frame update
     public const float max_distance = 1.0f;
-    private List<Tuple<GameObject, GameObject>> PairedConnectors = new List<Tuple<GameObject, GameObject>>();
+    //<Connector1, Connector2, Connecting Mesh
+    private List<Tuple<GameObject, GameObject, GameObject>> PairedConnectors = new List<Tuple<GameObject, GameObject, GameObject>>();
+    //private List<Tuple<GameObject, GameObject>> PairedConnectors = new List<Tuple<GameObject, GameObject>>();
+
 
     public void ConnectPoints(GameObject obj)
     {
@@ -35,10 +39,12 @@ public class Connect : MonoBehaviour
                     Spline spline = new Spline();
                     spline.Add(new BezierKnot(NewConnector.transform.position));
                     spline.Add(new BezierKnot(Connector.transform.position));
-                    //MeshGeneration.buildTrack(new List<Spline>(spline));
+                    
+                    GameObject meshObject = this.GetComponent<Draw_with_mesh_revolution>().addConnectorSegment(NewConnector, Connector);
 
                     // Remember to reactivate the connector
-                    PairedConnectors.Add(new Tuple<GameObject, GameObject>(NewConnector, Connector));
+                    PairedConnectors.Add(new Tuple<GameObject, GameObject, GameObject>(NewConnector, Connector, meshObject));
+                    //PairedConnectors.Add(new Tuple<GameObject, GameObject>(NewConnector, Connector));
                     NewConnector.SetActive(false);
                     Connector.SetActive(false);
                     break;
@@ -58,12 +64,14 @@ public class Connect : MonoBehaviour
 
         foreach (GameObject NewConnector in NewConnectors)
         {
-            foreach (Tuple<GameObject, GameObject> Pair in PairedConnectors)
-            {
+                foreach (Tuple<GameObject, GameObject, GameObject> Pair in PairedConnectors)
+                //foreach (Tuple<GameObject, GameObject> Pair in PairedConnectors)
+                {
                 if (NewConnector == Pair.Item1 || NewConnector == Pair.Item2)
                 {
                     Pair.Item1.SetActive(true);
                     Pair.Item2.SetActive(true);
+                    Destroy(Pair.Item3);
                     PairedConnectors.Remove(Pair);
                     break;
                 }
