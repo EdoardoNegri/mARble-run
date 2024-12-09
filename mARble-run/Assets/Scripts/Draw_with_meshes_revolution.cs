@@ -253,12 +253,14 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
 
             if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
             {
-                Vector3 right = Vector3.Cross(tangent, upVector).normalized;
+                Vector3 forward = (new Vector3(tangent.y, 0f, tangent.z)).normalized;
+                    Vector3 up = new Vector3(0f, 1f, 0f);
+                Vector3 right = Vector3.Cross(forward, up).normalized;
                 Vector3 left = -right;
-                Vector3 down = -upVector;
+                Vector3 down = -up;
 
                 //the (((Vector3)upVector)*width) is just there to move all points up a bit without redoing everything
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
+                /*curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
 
@@ -269,9 +271,21 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
+                */
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width * 1.2f));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((right + down).normalized * width));
+
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (down * width));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((left + down).normalized * width));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (left * width));
+
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (left * width * 1.2f));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
+                    curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
 
 
-            }
+                }
         }
             FillFaces_along_spline(curr_vertice_segment, curr_tris);
             GameObject meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(Rigidbody), typeof(MeshCollider));
