@@ -38,7 +38,7 @@ public class Connect : MonoBehaviour
                     spline.Add(new BezierKnot(NewConnector.transform.position));
                     spline.Add(new BezierKnot(Connector.transform.position));
                     
-                    GameObject meshObject = this.GetComponent<VRPathDrawerRevolution>().addConnectorSegment(NewConnector, Connector);
+                    GameObject meshObject = this.GetComponent<Draw_with_mesh_revolution>().addConnectorSegment(NewConnector, Connector);
 
                     // Remember to reactivate the connector
                     PairedConnectors.Add(new Tuple<GameObject, GameObject, GameObject>(NewConnector, Connector, meshObject));
