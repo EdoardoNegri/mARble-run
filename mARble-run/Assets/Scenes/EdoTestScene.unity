@@ -523,6 +523,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8799399107224669219, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
+        type: 3}
+      propertyPath: max_distance
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -531,6 +536,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3216324160959647840}
+    - targetCorrespondingSourceObject: {fileID: 5334186500852576166, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3216324160959647846}
   m_SourcePrefab: {fileID: 100100000, guid: 77a7e97f8c487e24ca6816d586e4a7ea, type: 3}
 --- !u!1 &3216324160959647839 stripped
 GameObject:
@@ -545,12 +554,31 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3216324160959647839}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: daaeaf6d2c4c946a0869fcd659b22ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controllerNode: 6
+  minDistance: 0.01
+  maxDistToConnect: 0.02
+  maxDistToErase: 0.02
+  mat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
+  connectorMat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
+  drawingMat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
+--- !u!114 &3216324160959647846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3216324160959647839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62258be9f51ff8b4b88561d57bd17f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerNode: 5
   minDistance: 0.01
   maxDistToConnect: 0.02
   maxDistToErase: 0.02

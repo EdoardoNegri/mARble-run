@@ -8,7 +8,7 @@ using MagicLeap.Examples;
 public class Connect : MonoBehaviour
 {
     // Start is called before the first frame update
-    public const float max_distance = 1.0f;
+    public float max_distance = 1.0f;
     //<Connector1, Connector2, Connecting Mesh
     private List<Tuple<GameObject, GameObject, GameObject>> PairedConnectors = new List<Tuple<GameObject, GameObject, GameObject>>();
     //private List<Tuple<GameObject, GameObject>> PairedConnectors = new List<Tuple<GameObject, GameObject>>();
