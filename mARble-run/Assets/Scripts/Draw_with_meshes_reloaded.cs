@@ -123,9 +123,8 @@ public class VRPathDrawerReloaded : MonoBehaviour
             GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             drawingMeshObjectList.Add(sphere);
             sphere.transform.position = currentPoint;
-            sphere.GetComponent<Rigidbody>().isKinematic = true;
             sphere.GetComponent<MeshRenderer>().material = drawingMat;
-
+            sphere.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
 
 
             lastPoint = currentPoint;
