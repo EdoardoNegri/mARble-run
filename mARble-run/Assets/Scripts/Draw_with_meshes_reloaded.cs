@@ -151,34 +151,34 @@ public class VRPathDrawerReloaded : MonoBehaviour
         drawingMeshObjectList.Clear();
     }
 
-    void eraseSegment(Vector3 position)
-    {
-        int seg_to_remove = -1;
-        float dist = float.MaxValue;
-        for (int i = 0; i < vertice_segments.Count; i++)
-        {
-            for (int j = 0; j < vertice_segments[i].Count; j++)
-            {
-                if (((float)Vector3.Distance(position, vertice_segments[i][j])) <= maxDistToErase)
-                {
-                    if (((float)Vector3.Distance(position, vertice_segments[i][j])) < dist)
-                    {
-                        dist = ((float)Vector3.Distance(position, vertice_segments[i][j]));
-                        seg_to_remove = i;
+    // void eraseSegment(Vector3 position)
+    // {
+    //     int seg_to_remove = -1;
+    //     float dist = float.MaxValue;
+    //     for (int i = 0; i < vertice_segments.Count; i++)
+    //     {
+    //         for (int j = 0; j < vertice_segments[i].Count; j++)
+    //         {
+    //             if (((float)Vector3.Distance(position, vertice_segments[i][j])) <= maxDistToErase)
+    //             {
+    //                 if (((float)Vector3.Distance(position, vertice_segments[i][j])) < dist)
+    //                 {
+    //                     dist = ((float)Vector3.Distance(position, vertice_segments[i][j]));
+    //                     seg_to_remove = i;
                         
 
-                    }
-                }
-            }
-        }
+    //                 }
+    //             }
+    //         }
+    //     }
         
-        if (seg_to_remove >= 0)
-        {
-            vertice_segments.RemoveAt(seg_to_remove);
-            ConstructRoute();
+    //     if (seg_to_remove >= 0)
+    //     {
+    //         vertice_segments.RemoveAt(seg_to_remove);
+    //         ConstructRoute();
             
-        }
-    }
+    //     }
+    // }
 
 
     void ConnectEndpoints()

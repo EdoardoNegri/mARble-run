@@ -15,7 +15,7 @@ namespace MagicLeap.Examples{
         void Update()
         {
             // Check for button press while the object is interactable
-            if (isInteracting && )
+            if (isInteracting)
             {
                 isInteracting = false;
                 Destroy(gameObject);
