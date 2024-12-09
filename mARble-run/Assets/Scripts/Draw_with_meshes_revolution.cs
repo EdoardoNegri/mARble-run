@@ -9,7 +9,6 @@ using UnityEngine.XR.OpenXR.NativeTypes;
 using MagicLeap.OpenXR.Features;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using System.Linq;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 using Unity.VisualScripting;
 using System;
 
@@ -222,6 +221,8 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
                     mesh.SetVertices(vertices.ToArray());
                     mesh.SetTriangles(tris.ToArray(), 0);
 
+                    mesh.RecalculateNormals();
+
                     meshObject.GetComponent<MeshFilter>().mesh = mesh;
                     meshObject.GetComponent<MeshRenderer>().material = connectorMat;
                     meshObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -288,6 +289,8 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
             mesh.SetVertices(curr_vertice_segment.ToArray());
             mesh.SetTriangles(curr_tris.ToArray(), 0);
 
+            mesh.RecalculateNormals();
+
             meshObject.GetComponent<MeshFilter>().mesh = mesh;
             meshObject.GetComponent<MeshRenderer>().material = mat;
             meshObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -338,6 +341,8 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
             mesh.SetVertices(verts.ToArray());
             mesh.SetTriangles(tris.ToArray(), 0);
 
+            mesh.RecalculateNormals();
+
             meshObject.GetComponent<MeshFilter>().mesh = mesh;
             meshObject.GetComponent<MeshRenderer>().material = connectorMat;
             meshObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -381,6 +386,8 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
 
                 mesh.SetVertices(vertices.ToArray());
                 mesh.SetTriangles(tris.ToArray(), 0);
+
+                mesh.RecalculateNormals();
 
                 meshObject.GetComponent<MeshFilter>().mesh = mesh;
                 meshObject.GetComponent<MeshRenderer>().material = mat;
