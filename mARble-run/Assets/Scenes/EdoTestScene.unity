@@ -193,6 +193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ML Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 2587420837012734618, guid: fd8105087379f4dc48f6b69d67619d68,
+        type: 3}
+      propertyPath: m_UseForceGrab
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6487038207068198745, guid: fd8105087379f4dc48f6b69d67619d68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -523,12 +528,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    m_RemovedComponents:
+    - {fileID: 876714173517108633, guid: 77a7e97f8c487e24ca6816d586e4a7ea, type: 3}
+=======
     - target: {fileID: 8799399107224669219, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
         type: 3}
       propertyPath: max_distance
       value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+>>>>>>> 6f49b05657802872e87adb5832c434e1b7ff652b
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

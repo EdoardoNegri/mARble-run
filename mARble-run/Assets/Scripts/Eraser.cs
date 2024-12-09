@@ -1,38 +1,25 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using MagicLeap.OpenXR.Features;
 
+namespace MagicLeap.Examples{
 //this needs to be attached to the object you want to delete
-public class VRObjectDeleter : MonoBehaviour
-{
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
-    public string buttonName = "Fire1"; // Replace with your input button name (e.g., "Submit" or "Fire1")
-    private bool isInteracting = false; // Tracks if the object is currently interactable
-
-    void Awake()
+    public class Eraser : MonoBehaviour
     {
-        interactable.hoverEntered.AddListener(OnHoverEntered);
-        interactable.hoverExited.AddListener(OnHoverExited);
-    }
-
-    void Update()
-    {
-        // Check for button press while the object is interactable
-        if (isInteracting && Input.GetButtonDown(buttonName))
+        private bool isInteracting = false; // Tracks if the object is currently interactable
+        private MagicLeapController controller;
+        void Start()
         {
-            interactable.hoverEntered.RemoveListener(OnHoverEntered);
-            interactable.hoverExited.RemoveListener(OnHoverExited);
-            Destroy(gameObject);
+            // Register the object as interactable
+            controller = MagicLeapController.Instance;
         }
-    }
-
-    // Event Handlers
-    private void OnHoverEntered(HoverEnterEventArgs args)
-    {
-        isInteracting = true;
-    }
-
-    private void OnHoverExited(HoverExitEventArgs args)
-    {
-        isInteracting = false;
+        void Update()
+        {
+            // Check for button press while the object is interactable
+            if (isInteracting && )
+            {
+                isInteracting = false;
+                Destroy(gameObject);
+            }
+        }
     }
 }

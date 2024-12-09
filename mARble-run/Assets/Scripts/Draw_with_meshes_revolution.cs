@@ -46,10 +46,6 @@ public class Draw_with_mesh_revolution   : MonoBehaviour
 
     
     private MagicLeapController controller;
-
-    
-    
-
     //number of vertices around each single point (dont change atm)
     private int numVertsPerPoint = 9;
     private int middlePointVertexOffset = 3;
