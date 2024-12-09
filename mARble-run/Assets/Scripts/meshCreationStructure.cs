@@ -73,11 +73,4 @@ public class meshCreationStructure : MonoBehaviour
 
         
     }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

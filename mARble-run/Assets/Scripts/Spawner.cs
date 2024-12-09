@@ -8,7 +8,6 @@ public class Spawner : MonoBehaviour
 
     public void SpawnObject()
     {
-
         Instantiate(spawnObject, transform.position + (transform.forward * 0.2f), transform.rotation);
     }
 }

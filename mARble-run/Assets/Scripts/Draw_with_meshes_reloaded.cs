@@ -13,13 +13,8 @@ using System.Linq;
 namespace MagicLeap.Examples{
 public class VRPathDrawerReloaded : MonoBehaviour
 {
-    public XRNode controllerNode = XRNode.RightHand; // Choose which controller to use
     public float minDistance = 0.1f; // Minimum distance between points and construction points
     public float maxDistToConnect = 0.02f;
-
-    public float maxDistToErase = 0.02f;
-    //public GameObject rampPrefab; // Prefab for the line renderer
-
     private Spline spline;
     private Vector3 lastPoint;
     private bool isDrawing = false;
