@@ -804,7 +804,7 @@ MonoBehaviour:
   xOffset: 0.5
   yOffsetMultiplier: 0.25
   zOffset: 1
-  rotation: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 180, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

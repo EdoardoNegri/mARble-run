@@ -236,6 +236,8 @@ public class VRPathDrawerReloaded : MonoBehaviour
                     mesh.SetVertices(vertices.ToArray());
                     mesh.SetTriangles(tris.ToArray(), 0);
 
+                    mesh.RecalculateNormals();
+
                     meshObject.GetComponent<MeshFilter>().mesh = mesh;
                     meshObject.GetComponent<MeshRenderer>().material = connectorMat;
                     meshObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -326,6 +328,8 @@ public class VRPathDrawerReloaded : MonoBehaviour
 
                 mesh.SetVertices(vertices.ToArray());
                 mesh.SetTriangles(tris.ToArray(), 0);
+
+                mesh.RecalculateNormals();
 
                 meshObject.GetComponent<MeshFilter>().mesh = mesh;
                 meshObject.GetComponent<MeshRenderer>().material = mat;
