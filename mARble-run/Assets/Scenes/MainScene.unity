@@ -528,24 +528,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    m_RemovedComponents:
-    - {fileID: 876714173517108633, guid: 77a7e97f8c487e24ca6816d586e4a7ea, type: 3}
-=======
     - target: {fileID: 8799399107224669219, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
         type: 3}
       propertyPath: max_distance
       value: 0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
->>>>>>> 6f49b05657802872e87adb5832c434e1b7ff652b
+    m_RemovedComponents:
+    - {fileID: 876714173517108633, guid: 77a7e97f8c487e24ca6816d586e4a7ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5334186500852576166, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3216324160959647840}
     - targetCorrespondingSourceObject: {fileID: 5334186500852576166, guid: 77a7e97f8c487e24ca6816d586e4a7ea,
         type: 3}
       insertIndex: -1
@@ -557,25 +549,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3216324160959647838}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3216324160959647840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3216324160959647839}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daaeaf6d2c4c946a0869fcd659b22ab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllerNode: 6
-  minDistance: 0.01
-  maxDistToConnect: 0.02
-  maxDistToErase: 0.02
-  mat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
-  connectorMat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
-  drawingMat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
 --- !u!114 &3216324160959647846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,13 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62258be9f51ff8b4b88561d57bd17f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerNode: 5
-  minDistance: 0.01
-  maxDistToConnect: 0.02
-  maxDistToErase: 0.02
   mat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
-  connectorMat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
-  drawingMat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
 --- !u!1001 &7571872385936361526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,6 +570,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 343602611250412322, guid: d50f87de7933ae947b15bf49ca395703,
+        type: 3}
+      propertyPath: spawnObject
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 380045118318832297, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_text
@@ -649,6 +621,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 334636515818315993, guid: 2db52c29f539d6448adab16ffeddef61,
         type: 3}
+    - target: {fileID: 3802798156524819906, guid: d50f87de7933ae947b15bf49ca395703,
+        type: 3}
+      propertyPath: spawnObject
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4192054762077094472, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_Name
@@ -657,6 +634,11 @@ PrefabInstance:
     - target: {fileID: 4258356597506027001, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507172936112111388, guid: d50f87de7933ae947b15bf49ca395703,
+        type: 3}
+      propertyPath: spawnObject
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4751014364994242130, guid: d50f87de7933ae947b15bf49ca395703,
@@ -800,6 +782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059970849037472785, guid: d50f87de7933ae947b15bf49ca395703,
+        type: 3}
+      propertyPath: spawnObject
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7119519818086946753, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}

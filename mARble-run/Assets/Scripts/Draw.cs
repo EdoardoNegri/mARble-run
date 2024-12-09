@@ -29,11 +29,17 @@ public class Draw : MonoBehaviour
     private Vector3 currStartPoint;
     private Vector3 lastPoint;
     private GameObject sphere;
+
     private GameObject sphereParent;
+
+    private MagicLeapRenderingExtensionsFeature rendering;
 
     void Start()
     {
         controller = MagicLeapController.Instance;
+
+        rendering = OpenXRSettings.Instance.GetFeature<MagicLeapRenderingExtensionsFeature>();
+        rendering.BlendMode = XrEnvironmentBlendMode.Additive;
     }
 
     void Update()
@@ -56,13 +62,15 @@ public class Draw : MonoBehaviour
     {
         isDrawing = true;
         currStartPoint = controller.Position;
+        spline.Add(new BezierKnot(currStartPoint));
         lastPoint = currStartPoint;
-        GameObject sphereParent = new GameObject("SphereParent");
+        sphereParent = new GameObject("SphereParent");
         //it doesnt set as parent
-        GameObject Drawingsphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         sphere.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
         sphere.GetComponent<MeshRenderer>().material = mat;
         sphere.transform.position = currStartPoint;
+        sphere.transform.SetParent(sphereParent.transform);
     }
 
     void ContinueDrawing()
@@ -72,7 +80,7 @@ public class Draw : MonoBehaviour
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
             spline.Add(new BezierKnot(currentPoint));
-            GameObject currsphere = Instantiate(sphere, currentPoint, Quaternion.identity, sphereParent.transform);
+            Instantiate(sphere, currentPoint, Quaternion.identity, sphereParent.transform);
             lastPoint = currentPoint;
         }
     }
