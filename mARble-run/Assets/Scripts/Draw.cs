@@ -110,8 +110,6 @@ void StopDrawing()
         List<Vector3> curr_vertice_segment = new List<Vector3>();
         List<int> curr_tris = new List<int>();
 
-        List<Vector3> pillar_verts = new List<Vector3>();
-        List<int> pillar_tris = new List<int>();
         int point_counter = 0;
 
         float starting_point = 0.001f;
@@ -149,27 +147,10 @@ void StopDrawing()
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (left * width * 1.2f));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
-
-                if (point_counter % 8 == 0)
-                    {
-                        Vector3 d = new Vector3(0.0f, -1.0f, 0.0f);
-                        pillar_verts.Add((Vector3)position + (right * width*0.1f));
-                        pillar_verts.Add((Vector3)position + (forward * width * 0.1f));
-                        pillar_verts.Add((Vector3)position + (left * width * 0.1f));
-                        pillar_verts.Add((Vector3)position + (-forward * width * 0.1f));
-
-
-                        pillar_verts.Add((Vector3)position + (right * width * 0.1f) + d * width * 50f);
-                        pillar_verts.Add((Vector3)position + (forward * width * 0.1f) + d * width * 50f);
-                        pillar_verts.Add((Vector3)position + (left * width * 0.1f) + d * width * 50f);
-                        pillar_verts.Add((Vector3)position + (-forward * width * 0.1f) + d * width * 50f);
-
-                    }
             }
             point_counter++;
         }
         FillFaces_along_spline(curr_vertice_segment, curr_tris);
-        FillFaces_along_pillars(pillar_verts, pillar_tris);
         GameObject meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(Rigidbody), typeof(MeshCollider));
 
         GameObject connector1 = new GameObject("connector_start");
@@ -194,16 +175,6 @@ void StopDrawing()
         meshObject.GetComponent<MeshRenderer>().material = mat;
         meshObject.GetComponent<Rigidbody>().isKinematic = true;
         meshObject.GetComponent<MeshCollider>().sharedMesh = mesh;
-
-        GameObject pillarmeshObject = new GameObject("Pillar Mesh Object", typeof(MeshRenderer), typeof(MeshFilter));
-        Mesh pillar_mesh = new Mesh();
-        pillar_mesh.SetVertices(pillar_verts.ToArray());
-        pillar_mesh.SetTriangles(pillar_tris.ToArray(), 0);
-        pillarmeshObject.GetComponent<MeshFilter>().mesh = pillar_mesh;
-        pillarmeshObject.GetComponent<MeshRenderer>().material = mat;
-        pillarmeshObject.transform.SetParent(meshObject.transform);
-
-        pillar_mesh.RecalculateNormals();
 
         this.GetComponent<Connect>().ConnectPoints(meshObject);
 
@@ -421,44 +392,5 @@ void StopDrawing()
         tris.Add(offset + 5);
 
     }
-
-    void FillFaces_along_pillars(List<Vector3> vertices, List<int> tris)
-    {
-        for (int i = 0; i < vertices.Count - 8; i += 8)
-        {
-                tris.Add(i + 0);
-                tris.Add(i + 4);
-                tris.Add(i + 5);
-
-                tris.Add(i + 0);
-                tris.Add(i + 5);
-                tris.Add(i + 1);
-
-                tris.Add(i + 1);
-                tris.Add(i + 5);
-                tris.Add(i + 6);
-
-                tris.Add(i + 1);
-                tris.Add(i + 6);
-                tris.Add(i + 2);
-
-                tris.Add(i + 2);
-                tris.Add(i + 6);
-                tris.Add(i + 7);
-
-                tris.Add(i + 2);
-                tris.Add(i + 7);
-                tris.Add(i + 3);
-
-                tris.Add(i + 3);
-                tris.Add(i + 7);
-                tris.Add(i + 4);
-
-                tris.Add(i + 3);
-                tris.Add(i + 4);
-                tris.Add(i + 0);
-            }
-
-        }
     }
 }
