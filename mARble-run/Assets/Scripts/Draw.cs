@@ -30,7 +30,7 @@ public class Draw : MonoBehaviour
     private Vector3 lastPoint;
     private GameObject sphereParent;
 
- void Start()
+void Start()
 {
     //this is done such that when you are selecting something it doesn't draw
     controller = MagicLeapController.Instance;
@@ -51,7 +51,8 @@ public IEnumerator canDraw()
         if (controller.TriggerIsPressed)
         {
             var pos = controller.Position;
-            var dir = controller.Orientation * Vector3.forward;
+            var dir = controller.Rotation * Vector3.forward;
+            RaycastHit hit;
             if (Physics.Raycast(pos, dir, out hit))
                 yield return StartCoroutine(HandleErasing(hit)); // Coroutine waits until finished
         }
@@ -75,7 +76,7 @@ void StartDrawing()
     Instantiate(sphere, currStartPoint, Quaternion.identity, sphereParent.transform);
 }
 
-public IEnumerator HandleErasing(var hit)
+public IEnumerator HandleErasing(RaycastHit hit)
 {
     while (controller.TriggerIsPressed)
     {
