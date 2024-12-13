@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MeshPrefab: {fileID: 96118017305851066, guid: d41b582e743144b378c3d34eb8c078aa,
     type: 3}
   m_Density: 1
-  m_Normals: 1
+  m_Normals: 0
   m_Tangents: 0
   m_TextureCoordinates: 0
   m_Colors: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbd64ecda6cd48f3a18a004ee8b057e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reprojectionMode: 1
+  reprojectionMode: 2
 --- !u!1001 &7571872385936361526
 PrefabInstance:
   m_ObjectHideFlags: 0
