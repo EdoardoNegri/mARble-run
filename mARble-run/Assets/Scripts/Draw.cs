@@ -48,19 +48,22 @@ public IEnumerator canDraw()
 {
     while (true)
     {
-        if (controller.TriggerIsPressed)
-        {
-            var pos = controller.Position;
-            var dir = controller.Rotation * Vector3.forward;
-            RaycastHit hit;
-            if (Physics.Raycast(pos, dir, out hit))
-                yield return StartCoroutine(HandleErasing(hit)); // Coroutine waits until finished
-        }
         if (controller.BumperIsPressed)
         {
+            if (controller.TriggerIsPressed) 
+            {
+                var pos = controller.Position;
+                var dir = controller.Rotation * Vector3.forward;
+                RaycastHit hit;
+                if (Physics.Raycast(pos, dir, out hit))
+                    Destroy(hit.transform.gameObject);
+            } 
+            else 
+            {
             StartDrawing();
             yield return StartCoroutine(HandleDrawing()); // Coroutine waits until finished
             StopDrawing();
+            }
         }
         yield return null; // Wait for the next frame
     }
@@ -74,19 +77,6 @@ void StartDrawing()
     
     sphereParent = new GameObject("SphereParent");
     Instantiate(sphere, currStartPoint, Quaternion.identity, sphereParent.transform);
-}
-
-public IEnumerator HandleErasing(RaycastHit hit)
-{
-    while (controller.TriggerIsPressed)
-    {
-        if (controller.BumperIsPressed)
-        {
-            Destroy(hit.transform.gameObject);
-            yield break;
-        }
-        yield return null; // Wait for the next frame
-    }
 }
 
 private IEnumerator HandleDrawing()
