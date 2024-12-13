@@ -16,7 +16,7 @@ public class TargetTrigger : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
-        if (other.name == "Marble")
+        if (other.tag == "Marble")
         {
             completeParticleSystem.Play();
             m_AudioSource.PlayOneShot (m_AudioSource.clip);
