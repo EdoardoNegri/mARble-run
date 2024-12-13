@@ -8,6 +8,7 @@ using UnityEngine.XR.OpenXR;
 using UnityEngine.XR.OpenXR.NativeTypes;
 using System.Collections;
 using MagicLeap.OpenXR.Features;
+//using System.Numerics;
 
 namespace MagicLeap.Examples
 {
@@ -143,12 +144,12 @@ void StopDrawing()
         FillFaces_along_spline(curr_vertice_segment, curr_tris);
         GameObject meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(Rigidbody), typeof(MeshCollider));
 
-        GameObject connector1 = new GameObject("connector1");
+        GameObject connector1 = new GameObject("connector_start");
         connector1.tag = "Connector";
         connector1.transform.position = currStartPoint;
         connector1.transform.SetParent(meshObject.transform);
 
-        GameObject connector2 = new GameObject("connector2");
+        GameObject connector2 = new GameObject("connector_end");
         connector2.tag = "Connector";
         connector2.transform.position = lastPoint;
         connector2.transform.SetParent(meshObject.transform);
@@ -177,18 +178,38 @@ void StopDrawing()
         spline.Add(new BezierKnot(connector2.transform.position));
 
 
+        float3 tangent = (connector1.transform.position - connector2.transform.position).normalized;
+
+
         List<Vector3> verts = new List<Vector3>();
         List<int> tris = new List<int>();
-        for (float t = 0f; t <= 1; t += 1)
+
+
+
+        if (connector1.transform.parent.gameObject.CompareTag("Segment"))
+        {
+                
+                int offset = 0;
+                Vector3[] verts_array = connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices;
+                if (connector1.name == "connector_end")
+                {
+                    offset = verts_array.Length - numVertsPerPoint;
+                }
+                for(int i = 0; i < numVertsPerPoint; i++)
+                {
+                    verts.Add((Vector3)connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset+i]);
+                }
+        } 
+        else
         {
 
-            if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
-            {
-                Vector3 right = Vector3.Cross(tangent, upVector).normalized;
+                float3 upVector = new float3(1.0f, 1.0f,1.0f);
+                Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
+                Vector3 up = ((Vector3)upVector).normalized;
+                Vector3 right = Vector3.Cross(forward, up).normalized;
                 Vector3 left = -right;
-                Vector3 down = -upVector;
-
-                //the (((Vector3)upVector)*width) is just there to move all points up a bit without redoing everything
+                Vector3 down = -up;
+                float3 position = connector1.transform.position;    
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
@@ -200,10 +221,48 @@ void StopDrawing()
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
+         }
 
+            if (connector2.transform.parent.gameObject.CompareTag("Segment"))
+            {
 
+                int offset = 0;
+                Vector3[] verts_array = connector2.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices;
+                if (connector2.name == "connector_end")
+                {
+                    offset = verts_array.Length - numVertsPerPoint;
+                }
+                for (int i = 0; i < numVertsPerPoint; i++)
+                {
+                    verts.Add((Vector3)connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset + i]);
+                }
             }
-        }
+            else
+            {
+
+                float3 upVector = new float3(1.0f, 1.0f, 1.0f);
+                Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
+                Vector3 up = ((Vector3)upVector).normalized;
+                Vector3 right = Vector3.Cross(forward, up).normalized;
+                Vector3 left = -right;
+                Vector3 down = -up;
+                float3 position = connector1.transform.position;
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
+
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
+
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
+                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
+            }
+
+
+
+
         FillFaces_along_spline(verts, tris);
         GameObject meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(Rigidbody), typeof(MeshCollider));
         Mesh mesh = new Mesh();
