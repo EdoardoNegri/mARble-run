@@ -22,7 +22,6 @@ public class Draw : MonoBehaviour
     //const values for mesh generation
     private const int numVertsPerPoint = 9;
     private const float width = 0.05f;
-    private float spline_total_length = 0.0f;
     private const float spline_step_size = width;
 
     private Spline spline = new Spline();
@@ -31,7 +30,7 @@ public class Draw : MonoBehaviour
     private Vector3 lastPoint;
     private GameObject sphereParent;
 
- void Start()
+void Start()
 {
     //this is done such that when you are selecting something it doesn't draw
     controller = MagicLeapController.Instance;
@@ -49,18 +48,22 @@ public IEnumerator canDraw()
 {
     while (true)
     {
-        if (controller.TriggerIsPressed)
-        {
-            var pos = controller.Position;
-            var dir = controller.Orientation * Vector3.forward;
-            if (Physics.Raycast(pos, dir, out hit))
-                yield return StartCoroutine(HandleErasing(hit)); // Coroutine waits until finished
-        }
         if (controller.BumperIsPressed)
         {
+            if (controller.TriggerIsPressed) 
+            {
+                var pos = controller.Position;
+                var dir = controller.Rotation * Vector3.forward;
+                RaycastHit hit;
+                if (Physics.Raycast(pos, dir, out hit))
+                    Destroy(hit.transform.gameObject);
+            } 
+            else 
+            {
             StartDrawing();
             yield return StartCoroutine(HandleDrawing()); // Coroutine waits until finished
             StopDrawing();
+            }
         }
         yield return null; // Wait for the next frame
     }
@@ -76,19 +79,6 @@ void StartDrawing()
     Instantiate(sphere, currStartPoint, Quaternion.identity, sphereParent.transform);
 }
 
-public IEnumerator HandleErasing(var hit)
-{
-    while (controller.TriggerIsPressed)
-    {
-        if (controller.BumperIsPressed)
-        {
-            Destroy(hit.transform.gameObject);
-            yield break;
-        }
-        yield return null; // Wait for the next frame
-    }
-}
-
 private IEnumerator HandleDrawing()
 {
     while (controller.BumperIsPressed) // Continue drawing while bumper is pressed
@@ -96,8 +86,6 @@ private IEnumerator HandleDrawing()
         Vector3 currentPoint = controller.Position;
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
-            spline_total_length += Vector3.Distance(currentPoint, lastPoint);
-
             spline.Add(new BezierKnot(currentPoint));
             Instantiate(sphere, currentPoint, Quaternion.identity, sphereParent.transform);
             lastPoint = currentPoint;
@@ -112,7 +100,6 @@ void StopDrawing()
     // Create a mesh for this spline (All vertices are created here)
     addMeshSegment();
     spline.Clear();
-    spline_total_length = 0.0f;
 }
 
     public void addMeshSegment()
@@ -127,8 +114,10 @@ void StopDrawing()
         List<int> pillar_tris = new List<int>();
         int point_counter = 0;
 
-        float percentage = 0.05F; // (spline_total_length / spline_step_size);
-        for (float t = 0f; t <= 1; t += percentage)
+        float starting_point = 0.001f;
+        float spline_total_length = spline.GetLength() - starting_point;
+        float percentage = (spline_step_size / spline_total_length);
+        for (float t = starting_point; t <= 1; t += percentage)
         {   
             
 
