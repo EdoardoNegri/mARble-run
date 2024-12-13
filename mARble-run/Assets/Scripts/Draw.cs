@@ -22,7 +22,6 @@ public class Draw : MonoBehaviour
     //const values for mesh generation
     private const int numVertsPerPoint = 9;
     private const float width = 0.05f;
-    private float spline_total_length = 0.0f;
     private const float spline_step_size = width;
 
     private Spline spline = new Spline();
@@ -76,8 +75,6 @@ private IEnumerator HandleDrawing()
         Vector3 currentPoint = controller.Position;
         if (Vector3.Distance(currentPoint, lastPoint) > minDistance)
         {
-            spline_total_length += Vector3.Distance(currentPoint, lastPoint);
-
             spline.Add(new BezierKnot(currentPoint));
             Instantiate(sphere, currentPoint, Quaternion.identity, sphereParent.transform);
             lastPoint = currentPoint;
@@ -92,7 +89,6 @@ void StopDrawing()
     // Create a mesh for this spline (All vertices are created here)
     addMeshSegment();
     spline.Clear();
-    spline_total_length = 0.0f;
 }
 
     public void addMeshSegment()
@@ -107,8 +103,10 @@ void StopDrawing()
         List<int> pillar_tris = new List<int>();
         int point_counter = 0;
 
-        float percentage = 0.05F; // (spline_total_length / spline_step_size);
-        for (float t = 0f; t <= 1; t += percentage)
+        float starting_point = 0.001f;
+        float spline_total_length = spline.GetLength() - starting_point;
+        float percentage = (spline_step_size / spline_total_length);
+        for (float t = starting_point; t <= 1; t += percentage)
         {   
             
 
