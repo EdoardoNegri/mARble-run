@@ -146,18 +146,18 @@ void StopDrawing()
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
 
                 if (point_counter % 8 == 0)
-                    {   
-                        
-                        pillar_verts.Add((Vector3)position + (right * width*0.5f));
-                        pillar_verts.Add((Vector3)position + (forward * width * 0.5f));
-                        pillar_verts.Add((Vector3)position + (left * width * 0.5f));
-                        pillar_verts.Add((Vector3)position + (-forward * width * 0.5f));
+                    {
+                        Vector3 d = new Vector3(0.0f, -1.0f, 0.0f);
+                        pillar_verts.Add((Vector3)position + (right * width*0.1f));
+                        pillar_verts.Add((Vector3)position + (forward * width * 0.1f));
+                        pillar_verts.Add((Vector3)position + (left * width * 0.1f));
+                        pillar_verts.Add((Vector3)position + (-forward * width * 0.1f));
 
 
-                        pillar_verts.Add((Vector3)position + (right * width * 0.5f) + down * width * 50f);
-                        pillar_verts.Add((Vector3)position + (forward * width * 0.5f) + down * width * 50f);
-                        pillar_verts.Add((Vector3)position + (left * width * 0.5f) + down * width * 50f);
-                        pillar_verts.Add((Vector3)position + (-forward * width * 0.5f) + down * width * 50f);
+                        pillar_verts.Add((Vector3)position + (right * width * 0.1f) + d * width * 50f);
+                        pillar_verts.Add((Vector3)position + (forward * width * 0.1f) + d * width * 50f);
+                        pillar_verts.Add((Vector3)position + (left * width * 0.1f) + d * width * 50f);
+                        pillar_verts.Add((Vector3)position + (-forward * width * 0.1f) + d * width * 50f);
 
                     }
             }
@@ -205,10 +205,7 @@ void StopDrawing()
 
     public GameObject addConnectorSegment(GameObject connector1, GameObject connector2)
     {
-        spline.Clear();
-        spline.Add(new BezierKnot(connector1.transform.position));
-        spline.Add(new BezierKnot(connector2.transform.position));
-
+       
 
         float3 tangent = (connector1.transform.position - connector2.transform.position).normalized;
 
@@ -226,15 +223,17 @@ void StopDrawing()
                 if (connector1.name == "connector_end")
                 {
                     offset = verts_array.Length - numVertsPerPoint;
+                    Debug.Log("ConnectionTest: Connector1 end");
                 }
                 for(int i = 0; i < numVertsPerPoint; i++)
                 {
+                    Debug.Log("ConnectionTest: Connector1 start/end");
                     verts.Add((Vector3)connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset+i]);
                 }
         } 
         else
         {
-
+                Debug.Log("ConnectionTest: Connector1 no vertices");
                 float3 upVector = new float3(1.0f, 1.0f,1.0f);
                 Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
                 Vector3 up = ((Vector3)upVector).normalized;
@@ -262,16 +261,18 @@ void StopDrawing()
                 Vector3[] verts_array = connector2.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices;
                 if (connector2.name == "connector_end")
                 {
+                    Debug.Log("ConnectionTest: Connector2 end");
                     offset = verts_array.Length - numVertsPerPoint;
                 }
                 for (int i = 0; i < numVertsPerPoint; i++)
                 {
+                    Debug.Log("ConnectionTest: Connector2 start/end");
                     verts.Add((Vector3)connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset + i]);
                 }
             }
             else
             {
-
+                Debug.Log("ConnectionTest: Connector1 no vertices");
                 float3 upVector = new float3(1.0f, 1.0f, 1.0f);
                 Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
                 Vector3 up = ((Vector3)upVector).normalized;
@@ -292,7 +293,7 @@ void StopDrawing()
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
             }
 
-
+        Debug.Log("ConnectionTest: vertices" + verts.Count);
 
 
         FillFaces_along_spline(verts, tris);
