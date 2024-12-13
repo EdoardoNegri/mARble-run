@@ -39,6 +39,8 @@ public class Draw : MonoBehaviour
     // Set up dimming
     MagicLeapRenderingExtensionsFeature rendering = OpenXRSettings.Instance.GetFeature<MagicLeapRenderingExtensionsFeature>();
     rendering.BlendMode = XrEnvironmentBlendMode.Additive;
+
+    sphere.transform.localScale = new Vector3(width / 3, width / 3, width / 3);
 }
 
 
@@ -99,7 +101,7 @@ void StopDrawing()
 
         List<Vector3> curr_vertice_segment = new List<Vector3>();
         List<int> curr_tris = new List<int>();
-        float percentage = (spline_total_length / spline_step_size);
+        float percentage = 0.05F; //(spline_total_length / spline_step_size);
         for (float t = 0f; t <= 1; t += percentage)
         {
 
