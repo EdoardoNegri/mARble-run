@@ -595,7 +595,7 @@ PrefabInstance:
     - target: {fileID: 380045118318832297, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_text
-      value: TODO
+      value: End Bowl
       objectReference: {fileID: 0}
     - target: {fileID: 843815941041153539, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
@@ -642,7 +642,8 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2807173547592679632, guid: 95bf1653c2fd2a643bb3bfcf4fa8b34a,
+        type: 3}
     - target: {fileID: 4192054762077094472, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: m_Name
@@ -652,7 +653,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 5448025b9df2b364cb62dcd3a4795f94,
+        type: 3}
     - target: {fileID: 4507172936112111388, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
       propertyPath: spawnObject
@@ -668,6 +670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: TODO
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901916333041176351, guid: d50f87de7933ae947b15bf49ca395703,
+        type: 3}
+      propertyPath: m_Name
+      value: EndCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 5890401568212332818, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
