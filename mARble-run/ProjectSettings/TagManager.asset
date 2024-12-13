@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Route
   - Connector
+  - Marble
   layers:
   - Default
   - TransparentFX
