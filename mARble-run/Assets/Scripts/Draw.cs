@@ -112,6 +112,13 @@ void StopDrawing()
 
             if (SplineUtility.Evaluate(spline, t, out float3 position, out float3 tangent, out float3 upVector))
             {
+                if (t == 0f)
+                {
+                        Debug.Log("SplineTest: start point:");
+                        Debug.Log("SplineTest: position:" + position);
+                        Debug.Log("SplineTest: tangent:" + tangent);
+                        Debug.Log("SplineTest: upVector:" + upVector);
+                }
                 Vector3 tang = ((Vector3)tangent).normalized;
 
                 Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
@@ -120,19 +127,6 @@ void StopDrawing()
                 Vector3 left = -right;
                 Vector3 down = -up;
 
-                //the (((Vector3)upVector)*width) is just there to move all points up a bit without redoing everything
-                /*curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
-
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
-
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
-                curr_vertice_segment.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
-                */
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width * 1.2f));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + ((right + down).normalized * width));
