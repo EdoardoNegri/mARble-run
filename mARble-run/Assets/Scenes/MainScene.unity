@@ -570,6 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
+  connectorMat: {fileID: 2100000, guid: cdea5906b6af14ae4bc029c46be9d305, type: 2}
   sphere: {fileID: 8920710230543628620, guid: c2d9cc66b7cf9dd4cbd695792c7137fd, type: 3}
   spline_step_size: 0.1
 --- !u!114 &3216324160959647847

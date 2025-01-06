@@ -17,6 +17,7 @@ public class Draw : MonoBehaviour
 {
     public const float minDistance = 0.1f; // Minimum distance between points and construction points
     public Material mat;
+    public Material connectorMat;
     public GameObject sphere;
 
     //const values for mesh generation
@@ -299,34 +300,34 @@ void StopDrawing()
                     verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
                     */
                 }
-                if (connector1.name == "connector_start" && connector1.name == "connector_end")
+                if (connector1.name == "connector_start" && connector2.name == "connector_end")
                 {
                     verts2.AddRange(verts1);
                     verts.AddRange(verts2);
                 }
-                else if (connector1.name == "connector_end" && connector1.name == "connector_start")
+                else if (connector1.name == "connector_end" && connector2.name == "connector_start")
                 {
                     verts1.AddRange(verts2);
                     verts.AddRange(verts1);
                 }
-                else if (connector1.name == "connector_end" && connector1.name == "connector_start")
+                else if (connector1.name == "connector_end" && connector2.name == "connector_end")
                 {
                     verts2 = Flip_single_step(verts2);
-                    verts2.AddRange(verts1);
-                    verts.AddRange(verts2);
+                    verts1.AddRange(verts2);
+                    verts.AddRange(verts1);
 
                 }
-                else if (connector1.name == "connector_end" && connector1.name == "connector_start")
+                else if (connector1.name == "connector_start" && connector2.name == "connector_start")
                 {
                     verts2 = Flip_single_step(verts2);
-                    verts1.AddRange(verts2);
-                    verts.AddRange(verts1);
+                    verts2.AddRange(verts1);
+                    verts.AddRange(verts2);
                 }
                 else
                 {
                     Debug.Log("ConnectionTest: else (should never happen)");
-                    verts1.AddRange(verts2);
-                    verts.AddRange(verts1);
+                    verts2.AddRange(verts1);
+                    verts.AddRange(verts2);
                 }
 
             
@@ -346,7 +347,7 @@ void StopDrawing()
         mesh.RecalculateNormals();
 
         meshObject.GetComponent<MeshFilter>().mesh = mesh;
-        meshObject.GetComponent<MeshRenderer>().material = mat;
+        meshObject.GetComponent<MeshRenderer>().material = connectorMat;
         meshObject.GetComponent<Rigidbody>().isKinematic = true;
         meshObject.GetComponent<MeshCollider>().sharedMesh = mesh;
 
