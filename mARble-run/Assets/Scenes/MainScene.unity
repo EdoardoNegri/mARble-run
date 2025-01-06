@@ -571,6 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: 2ba59906a267f2a4c81070482c60533e, type: 2}
   sphere: {fileID: 8920710230543628620, guid: c2d9cc66b7cf9dd4cbd695792c7137fd, type: 3}
+  spline_step_size: 0.1
 --- !u!114 &3216324160959647847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,7 +654,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 334636515818315993, guid: 2db52c29f539d6448adab16ffeddef61,
+      objectReference: {fileID: 8857777607647635852, guid: 6198bf63d388c9546945c74c1fd91e04,
         type: 3}
     - target: {fileID: 3802798156524819906, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}
@@ -681,7 +682,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnObject
       value: 
-      objectReference: {fileID: 5789035407122697802, guid: a5083597f83d01146ad50fdd92568e7d,
+      objectReference: {fileID: 2604237881486724550, guid: f9bdd6ecc017dce4abef390895244a71,
         type: 3}
     - target: {fileID: 4820351445128502946, guid: d50f87de7933ae947b15bf49ca395703,
         type: 3}

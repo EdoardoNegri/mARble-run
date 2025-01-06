@@ -22,7 +22,7 @@ public class Draw : MonoBehaviour
     //const values for mesh generation
     private const int numVertsPerPoint = 9;
     private const float width = 0.05f;
-    private const float spline_step_size = width;
+    public float spline_step_size = 0.1f;
 
     private Spline spline = new Spline();
     private MagicLeapController controller;
@@ -115,6 +115,7 @@ void StopDrawing()
         float starting_point = 0.001f;
         float spline_total_length = spline.GetLength() - starting_point;
         float percentage = (spline_step_size / spline_total_length);
+        Vector3 oldup= new Vector3(0.0f,1.0f,0.0f);
         for (float t = starting_point; t <= 1; t += percentage)
         {   
             
@@ -131,10 +132,13 @@ void StopDrawing()
                 Vector3 tang = ((Vector3)tangent).normalized;
 
                 Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
-                Vector3 up = ((Vector3) upVector).normalized;
+                Vector3 up = (((Vector3) upVector)+oldup).normalized;
                 Vector3 right = Vector3.Cross(forward, up).normalized;
                 Vector3 left = -right;
                 Vector3 down = -up;
+
+                oldup = up;
+                
 
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width * 1.2f));
                 curr_vertice_segment.Add(((Vector3)position) + (((Vector3)up) * width) + (right * width));
