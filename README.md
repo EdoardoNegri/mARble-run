@@ -3,11 +3,14 @@
 ### The Game:
 Build intricate marble tracks in augmented reality, where your imagination knows no bounds. Watch as your marbles race through your designs, and battle for the first place.
 
-### The Team:
-- Soroush Jahanzad
+### Description:
 
-- Edoardo Negri
 
-- Cyril Pomsar
+### The Authors:
+Soroush Jahanzad, Edoardo Negri, Cyril Pomsar, Aaron Zürcher
 
-- Aaron Zürcher
+Supervisor: Marcel Lancelle
+
+
+### Report and Demo
+<a href="https://github.com/EdoardoNegri/mARble-run/blob/edo/README.md">Report</a> | <a href="https://github.com/EdoardoNegri/mARble-run/blob/edo/README.md">Poster</a> | <a href="https://github.com/EdoardoNegri/mARble-run/blob/edo/README.md">Demo</a>
