@@ -199,93 +199,144 @@ void StopDrawing()
         List<int> tris = new List<int>();
 
 
+        List<Vector3> verts1 = new List<Vector3>();
+        List<Vector3> verts2 = new List<Vector3>();
+
+
+
         Debug.Log("ConnectionTest: tag1 " + connector1.transform.parent.gameObject.tag);
         Debug.Log("ConnectionTest: parent1 " + connector1.transform.parent.gameObject.name);
 
-        if (connector1.transform.parent.gameObject.name == "Mesh Object")
-        {
-                
-                int offset = 0;
-                Vector3[] verts_array = connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices;
-                if (connector1.name == "connector_end")
-                {
-                    offset = verts_array.Length - numVertsPerPoint;
-                    Debug.Log("ConnectionTest: Connector1 end");
-                }
-                for(int i = 0; i < numVertsPerPoint; i++)
-                {
-                    Debug.Log("ConnectionTest: Connector1 start/end");
-                    verts.Add((Vector3)connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset+i]);
-                }
-        } 
-        else
-        {
-                Debug.Log("ConnectionTest: Connector1 no vertices");
-                float3 upVector = new float3(1.0f, 1.0f,1.0f);
-                Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
-                Vector3 up = ((Vector3)upVector).normalized;
-                Vector3 right = Vector3.Cross(forward, up).normalized;
-                Vector3 left = -right;
-                Vector3 down = -up;
-                float3 position = connector1.transform.position;    
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
-
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
-
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
-         }
-            Debug.Log("ConnectionTest: tag2 " + connector2.transform.parent.gameObject.tag);
-            Debug.Log("ConnectionTest: parent2 " + connector2.transform.parent.gameObject.name);
-
-            if (connector2.transform.parent.gameObject.name == "Mesh Object")
+            if (connector1.transform.parent.gameObject.name == "Mesh Object" && connector2.transform.parent.gameObject.name == "Mesh Object")
             {
 
-                int offset = 0;
-                Vector3[] verts_array = connector2.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices;
-                if (connector2.name == "connector_end")
+                if (connector1.transform.parent.gameObject.name == "Mesh Object")
                 {
-                    Debug.Log("ConnectionTest: Connector2 end");
-                    offset = verts_array.Length - numVertsPerPoint;
+
+                    int offset = 0;
+                    Vector3[] verts_array = connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices;
+                    if (connector1.name == "connector_end")
+                    {
+                        offset = verts_array.Length - numVertsPerPoint;
+                        Debug.Log("ConnectionTest: Connector1 end");
+                    }
+                    else
+                    {
+                        Debug.Log("ConnectionTest: Connector1 start");
+                    }
+                    for (int i = 0; i < numVertsPerPoint; i++)
+                    {
+                        verts1.Add((Vector3)connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset + i]);
+                    }
                 }
-                for (int i = 0; i < numVertsPerPoint; i++)
+                else
                 {
-                    Debug.Log("ConnectionTest: Connector2 start/end");
-                    verts.Add((Vector3)connector2.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset + i]);
+                    Debug.Log("ConnectionTest: Connector1 no vertices");
+                    /*
+                    float3 upVector = new float3(1.0f, 1.0f, 1.0f);
+                    Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
+                    Vector3 up = ((Vector3)upVector).normalized;
+                    Vector3 right = Vector3.Cross(forward, up).normalized;
+                    Vector3 left = -right;
+                    Vector3 down = -up;
+                    float3 position = connector1.transform.position;
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
+
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
+
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
+                    */
                 }
-            }
-            else
-            {
-                Debug.Log("ConnectionTest: Connector2 no vertices");
-                float3 upVector = new float3(1.0f, 1.0f, 1.0f);
-                Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
-                Vector3 up = ((Vector3)upVector).normalized;
-                Vector3 right = Vector3.Cross(forward, up).normalized;
-                Vector3 left = -right;
-                Vector3 down = -up;
-                float3 position = connector2.transform.position;
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
+                Debug.Log("ConnectionTest: tag2 " + connector2.transform.parent.gameObject.tag);
+                Debug.Log("ConnectionTest: parent2 " + connector2.transform.parent.gameObject.name);
 
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
+                if (connector2.transform.parent.gameObject.name == "Mesh Object")
+                {
 
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
-                verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
-            }
+                    int offset = 0;
+                    Vector3[] verts_array = connector2.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices;
+                    if (connector2.name == "connector_end")
+                    {
+                        Debug.Log("ConnectionTest: Connector2 end");
+                        offset = verts_array.Length - numVertsPerPoint;
+                    }
+                    else
+                    {
+                        Debug.Log("ConnectionTest: Connector2 start");
+                    }
+                    for (int i = 0; i < numVertsPerPoint; i++)
+                    {
 
-        Debug.Log("ConnectionTest: vertices" + verts.Count);
+                        verts2.Add((Vector3)connector2.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset + i]);
+                    }
+                }
+                else
+                {
+                    Debug.Log("ConnectionTest: Connector2 no vertices");
+                    /*float3 upVector = new float3(1.0f, 1.0f, 1.0f);
+                    Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
+                    Vector3 up = ((Vector3)upVector).normalized;
+                    Vector3 right = Vector3.Cross(forward, up).normalized;
+                    Vector3 left = -right;
+                    Vector3 down = -up;
+                    float3 position = connector2.transform.position;
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
+
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (down * width));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left + down).normalized * width));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width));
+
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (left * width * 1.2f));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
+                    verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
+                    */
+                }
+                if (connector1.name == "connector_start" && connector1.name == "connector_end")
+                {
+                    verts2.AddRange(verts1);
+                    verts.AddRange(verts2);
+                }
+                else if (connector1.name == "connector_end" && connector1.name == "connector_start")
+                {
+                    verts1.AddRange(verts2);
+                    verts.AddRange(verts1);
+                }
+                else if (connector1.name == "connector_end" && connector1.name == "connector_start")
+                {
+                    verts2 = Flip_single_step(verts2);
+                    verts2.AddRange(verts1);
+                    verts.AddRange(verts2);
+
+                }
+                else if (connector1.name == "connector_end" && connector1.name == "connector_start")
+                {
+                    verts2 = Flip_single_step(verts2);
+                    verts1.AddRange(verts2);
+                    verts.AddRange(verts1);
+                }
+                else
+                {
+                    Debug.Log("ConnectionTest: else (should never happen)");
+                    verts1.AddRange(verts2);
+                    verts.AddRange(verts1);
+                }
+
+            
+
+                Debug.Log("ConnectionTest: vertices" + verts.Count);
 
 
-        FillFaces_along_spline(verts, tris);
+                FillFaces_along_spline(verts, tris);
+
+        }
         GameObject meshObject = new GameObject("Mesh Object", typeof(MeshRenderer), typeof(MeshFilter), typeof(Rigidbody), typeof(MeshCollider));
         Mesh mesh = new Mesh();
 
@@ -341,6 +392,21 @@ void StopDrawing()
         tris.Add(offset2 + numVertsPerPoint - 1);
 
 
+    }
+
+    List<Vector3> Flip_single_step(List<Vector3> v)
+    {
+        List<Vector3> v_new = new List<Vector3>();
+        v_new.Add(v[6]);
+        v_new.Add(v[5]);
+        v_new.Add(v[4]);
+        v_new.Add(v[3]);
+        v_new.Add(v[2]);
+        v_new.Add(v[1]);
+        v_new.Add(v[0]);
+        v_new.Add(v[8]);
+        v_new.Add(v[7]);
+        return v_new;
     }
     void FillFaces_stops_start(int offset, List<int> tris)
     {
