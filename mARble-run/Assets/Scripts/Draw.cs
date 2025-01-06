@@ -38,7 +38,7 @@ void Start()
     StartCoroutine(canDraw());
     // Set up dimming
     MagicLeapRenderingExtensionsFeature rendering = OpenXRSettings.Instance.GetFeature<MagicLeapRenderingExtensionsFeature>();
-    rendering.BlendMode = XrEnvironmentBlendMode.Additive;
+    rendering.BlendMode = XrEnvironmentBlendMode.AlphaBlend;
 
     sphere.transform.localScale = new Vector3(width / 3, width / 3, width / 3);
 }
