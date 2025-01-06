@@ -13,6 +13,16 @@ Build intricate marble tracks in augmented reality, where your imagination knows
 
 (Fix Report and Demo Links)
 ### Description:
+This project implements an interactive mixed-reality marble game designed for the Magic Leap 2 device. Users can create and manipulate virtual marble tracks in the air using the Magic Leap controller, offering a fun and immersive experience.
+
+Key Features:
+
+    - Track Creation: Draw virtual tracks in 3D space with the controller, allowing marbles to run down dynamically created paths.
+    - Track Customization: Place special pre-made blocks like funnels, loopings, and other obstacles to enhance the marble's journey.
+    - Editing & Deleting: Easily modify or delete parts of the track in real-time, providing flexibility for creative play.
+    - Immersive Interaction: Use the Magic Leap 2's spatial awareness and controller gestures to interact with the track and marbles in an intuitive - mixed-reality environment.
+
+This project showcases the capabilities of spatial computing and brings a playful twist to mixed-reality experiences.
 
 
 ### Installation
