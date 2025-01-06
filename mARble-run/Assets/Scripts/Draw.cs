@@ -162,10 +162,14 @@ void StopDrawing()
         connector1.transform.position = currStartPoint;
         connector1.transform.SetParent(meshObject.transform);
 
+        Debug.Log("ConnectionTest: initial tag1 " + connector1.transform.parent.gameObject.tag);
+
         GameObject connector2 = new GameObject("connector_end");
         connector2.tag = "Connector";
         connector2.transform.position = lastPoint;
         connector2.transform.SetParent(meshObject.transform);
+
+        Debug.Log("ConnectionTest: initial tag2 " + connector2.transform.parent.gameObject.tag);
 
         Mesh mesh = new Mesh();
 
@@ -188,15 +192,17 @@ void StopDrawing()
     {
        
 
-        float3 tangent = (connector1.transform.position - connector2.transform.position).normalized;
+        float3 tangent = (connector2.transform.position - connector1.transform.position).normalized;
 
 
         List<Vector3> verts = new List<Vector3>();
         List<int> tris = new List<int>();
 
 
+        Debug.Log("ConnectionTest: tag1 " + connector1.transform.parent.gameObject.tag);
+        Debug.Log("ConnectionTest: parent1 " + connector1.transform.parent.gameObject.name);
 
-        if (connector1.transform.parent.gameObject.CompareTag("Segment"))
+        if (connector1.transform.parent.gameObject.name == "Mesh Object")
         {
                 
                 int offset = 0;
@@ -234,8 +240,10 @@ void StopDrawing()
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((left * width) * 1.2f) + (down * width * 1.2f));
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right * width) * 1.2f) + (down * width * 1.2f));
          }
+            Debug.Log("ConnectionTest: tag2 " + connector2.transform.parent.gameObject.tag);
+            Debug.Log("ConnectionTest: parent2 " + connector2.transform.parent.gameObject.name);
 
-            if (connector2.transform.parent.gameObject.CompareTag("Segment"))
+            if (connector2.transform.parent.gameObject.name == "Mesh Object")
             {
 
                 int offset = 0;
@@ -248,19 +256,19 @@ void StopDrawing()
                 for (int i = 0; i < numVertsPerPoint; i++)
                 {
                     Debug.Log("ConnectionTest: Connector2 start/end");
-                    verts.Add((Vector3)connector1.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset + i]);
+                    verts.Add((Vector3)connector2.transform.parent.gameObject.GetComponent<MeshFilter>().mesh.vertices[offset + i]);
                 }
             }
             else
             {
-                Debug.Log("ConnectionTest: Connector1 no vertices");
+                Debug.Log("ConnectionTest: Connector2 no vertices");
                 float3 upVector = new float3(1.0f, 1.0f, 1.0f);
                 Vector3 forward = (new Vector3(tangent.x, 0f, tangent.z)).normalized;
                 Vector3 up = ((Vector3)upVector).normalized;
                 Vector3 right = Vector3.Cross(forward, up).normalized;
                 Vector3 left = -right;
                 Vector3 down = -up;
-                float3 position = connector1.transform.position;
+                float3 position = connector2.transform.position;
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width * 1.2f));
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + (right * width));
                 verts.Add(((Vector3)position) + (((Vector3)upVector) * width) + ((right + down).normalized * width));
