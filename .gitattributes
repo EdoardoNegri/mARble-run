@@ -6,3 +6,5 @@ mARble[[:space:]]Run/Library/PackageCache/com.unity.burst@1.8.17/.Runtime/*.dll 
 mARble[[:space:]]Run/Library/PackageCache/com.unity.burst@1.8.17/.Runtime/*.so filter=lfs diff=lfs merge=lfs -text
 mARble[[:space:]]Run/Library/PackageCache/com.unity.burst@1.8.17/.Runtime/*.dylib filter=lfs diff=lfs merge=lfs -text
 mARble[[:space:]]Run/Library/PackageCache/com.unity.burst@1.8.17/.Runtime/hostmac/dsymutil filter=lfs diff=lfs merge=lfs -text
+*.m4a filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
